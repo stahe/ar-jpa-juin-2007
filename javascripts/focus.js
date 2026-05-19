@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- BiDi document metadata (V906) ---
+  // --- BiDi document metadata (V907) ---
   var ODT_BIDI_ENABLED = __BIDI_ENABLED__;
   var ODT_BIDI_DIR = "__BIDI_DIR__";
   var ODT_BIDI_LANG = "__BIDI_LANG__";

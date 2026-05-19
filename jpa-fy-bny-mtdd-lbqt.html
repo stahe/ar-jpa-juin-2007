@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -429,10 +431,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-eclipsespringhibernate-quot-quot" class="md-nav__link">
+  <a href="#311-eclipsespringhibernate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. مشروع Eclipse/Spring/Hibernate &amp;quot; &amp;quot;
+        3.1.1. مشروع Eclipse/Spring/Hibernate &quot; &quot;
       
     </span>
   </a>
@@ -727,13 +729,68 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#3433" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.3.3. وحدة التحكم في التطبيق
+      
+    </span>
+  </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.4. اختبار تطبيق الويب
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#345-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.5. الإصدار 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#346-jpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.6. تغيير تطبيق JPA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. أمثلة أخرى
+      
+    </span>
+  </a>
   
 </li>
       
@@ -820,14 +877,14 @@
 <p>لدراسة واجهة برمجة تطبيقات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi>، استخدمنا بنية الاختبار التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E0000000CABD3FDE30.png" width="624" height="101" style="display:inline-block; margin:4px;width:16.51cm;height:2.672cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E0000000CABD3FDE30.png" /></td></tr></table>
 
-<p>كانت برامج الاختبار الخاصة بنا عبارة عن تطبيقات وحدة التحكم التي تستعلم عن طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> مباشرةً. وبذلك، استكشفنا الطرق الرئيسية لطبقة <bdi dir="ltr" class="odt-ltr-term">JPA.</bdi> كنا نعمل في بيئة تُعرف باسم &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">Java SE</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; (الإصدار القياسي). تعمل <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> في بيئات <bdi dir="ltr" class="odt-ltr-term">Java SE</bdi> و<bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> (الإصدار المؤسسي) على حد سواء. </p>
+<p>كانت برامج الاختبار الخاصة بنا عبارة عن تطبيقات وحدة التحكم التي تستعلم عن طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> مباشرةً. وبذلك، استكشفنا الطرق الرئيسية لطبقة <bdi dir="ltr" class="odt-ltr-term">JPA.</bdi> كنا نعمل في بيئة تُعرف باسم &quot;<bdi dir="ltr" class="odt-ltr-term">Java SE</bdi>&quot; (الإصدار القياسي). تعمل <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> في بيئات <bdi dir="ltr" class="odt-ltr-term">Java SE</bdi> و<bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> (الإصدار المؤسسي) على حد سواء. </p>
 <p>والآن بعد أن أصبح لدينا فهم جيد لكل من تكوين جسر العلاقات/الكائنات واستخدام أساليب طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi>، نعود إلى بنية متعددة المستويات أكثر تقليدية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005190000010B65DEB739.png" width="653" height="133" style="display:inline-block; margin:4px;width:17.265cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005190000010B65DEB739.png" /></td></tr></table>
 
 <p>سيتم الوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">JPA</bdi>] عبر بنية ثنائية الطبقات تتكون من طبقتي [الأعمال] و[<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. سيتم استخدام إطار عمل <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [7]، متبوعًا بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> [8]، لربط هذه الطبقات معًا.</p>
-<p>ذكرنا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> متاح في بيئتي <bdi dir="ltr" class="odt-ltr-term">SE</bdi> و <bdi dir="ltr" class="odt-ltr-term">EE5.</bdi> توفر بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> العديد من الخدمات للوصول إلى البيانات الدائمة، بما في ذلك مجمعات الاتصال ومديري المعاملات والمزيد. قد يكون من المفيد للمطور الاستفادة من هذه الخدمات. لم يتم اعتماد بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> على نطاق واسع بعد (مايو 2007). وهي متاحة حاليًا على <em><bdi dir="ltr" class="odt-ltr-term">Sun Application Server</bdi> 9.<bdi dir="ltr" class="odt-ltr-term">x</bdi> (<bdi dir="ltr" class="odt-ltr-term">Glassfish</bdi>)</em>. خادم التطبيقات هو في الأساس خادم تطبيقات ويب. إذا قمت بإنشاء تطبيق رسومي مستقل باستخدام <bdi dir="ltr" class="odt-ltr-term">Swing</bdi>، فلن تتمكن من الاستفادة من بيئة <bdi dir="ltr" class="odt-ltr-term">EE</bdi> والخدمات التي توفرها. وهذا يمثل مشكلة. بدأنا نرى بيئات <bdi dir="ltr" class="odt-ltr-term">EE</bdi> &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مستقلة&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;، أي تلك التي يمكن استخدامها خارج خادم التطبيقات. وهذا هو الحال مع <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi>، الذي سنستخدمه في هذا المستند.</p>
-<p>في بيئة <bdi dir="ltr" class="odt-ltr-term">EE5</bdi>، يتم تنفيذ الطبقات بواسطة كائنات تسمى <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> (<bdi dir="ltr" class="odt-ltr-term">Enterprise Java Beans</bdi>). في الإصدارات السابقة من <bdi dir="ltr" class="odt-ltr-term">EE</bdi>، كان يُنظر إلى <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> (<bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi>) على أنها صعبة التنفيذ والاختبار، وأحيانًا كانت أدائها أقل من المتوقع. نحن نميز بين حبوب <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">entity</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; و <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. باختصار، تتوافق &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">entity</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> مع صف في جدول قاعدة البيانات، و&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> هي كائن يُستخدم لتنفيذ طبقات [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] في بنية متعددة الطبقات. أحد الانتقادات الرئيسية للطبقات المنفذة باستخدام <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> هو أنها لا يمكن استخدامها إلا داخل حاويات <bdi dir="ltr" class="odt-ltr-term">EJB</bdi>، وهي خدمة توفرها بيئة <bdi dir="ltr" class="odt-ltr-term">EE.</bdi> وهذا يجعل اختبار الوحدة مشكلة. وبالتالي، في الرسم البياني أعلاه، سيتطلب اختبار الوحدة لطبقات [الأعمال] و[<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] المبنية باستخدام <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> إعداد خادم تطبيقات، وهي عملية مرهقة إلى حد ما ولا تشجع المطور حقًا على إجراء الاختبارات بشكل متكرر.</p>
-<p>تم إنشاء إطار عمل <strong><bdi dir="ltr" class="odt-ltr-term">Spring</bdi></strong> استجابةً لتعقيد <bdi dir="ltr" class="odt-ltr-term">EJB2.</bdi> يوفر <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، ضمن بيئة <bdi dir="ltr" class="odt-ltr-term">SE</bdi>، عددًا كبيرًا من الخدمات التي توفرها عادةً بيئات <bdi dir="ltr" class="odt-ltr-term">EE.</bdi> وبالتالي، في قسم &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;استمرارية البيانات&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; الذي يهمنا هنا، يوفر <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> مجموعات الاتصال ومديري المعاملات التي تتطلبها التطبيقات. وقد عزز ظهور <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ثقافة اختبار الوحدات، التي أصبح تنفيذها فجأة أسهل بكثير. يسمح <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> بتنفيذ طبقات التطبيقات باستخدام كائنات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> القياسية (<bdi dir="ltr" class="odt-ltr-term">POJOs</bdi>، <bdi dir="ltr" class="odt-ltr-term">Plain Old/Ordinary Java Objects</bdi>)، مما يتيح إعادة استخدامها في سياقات أخرى.  أخيرًا، يدمج العديد من أدوات الجهات الخارجية بشكل شفاف إلى حد ما، ولا سيما أدوات الاستمرارية مثل <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> و <bdi dir="ltr" class="odt-ltr-term">iBatis</bdi> و...  </p>
+<p>ذكرنا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> متاح في بيئتي <bdi dir="ltr" class="odt-ltr-term">SE</bdi> و <bdi dir="ltr" class="odt-ltr-term">EE5.</bdi> توفر بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> العديد من الخدمات للوصول إلى البيانات الدائمة، بما في ذلك مجمعات الاتصال ومديري المعاملات والمزيد. قد يكون من المفيد للمطور الاستفادة من هذه الخدمات. لم يتم اعتماد بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> على نطاق واسع بعد (مايو 2007). وهي متاحة حاليًا على <em><bdi dir="ltr" class="odt-ltr-term">Sun Application Server</bdi> 9.<bdi dir="ltr" class="odt-ltr-term">x</bdi> (<bdi dir="ltr" class="odt-ltr-term">Glassfish</bdi>)</em>. خادم التطبيقات هو في الأساس خادم تطبيقات ويب. إذا قمت بإنشاء تطبيق رسومي مستقل باستخدام <bdi dir="ltr" class="odt-ltr-term">Swing</bdi>، فلن تتمكن من الاستفادة من بيئة <bdi dir="ltr" class="odt-ltr-term">EE</bdi> والخدمات التي توفرها. وهذا يمثل مشكلة. بدأنا نرى بيئات <bdi dir="ltr" class="odt-ltr-term">EE</bdi> &quot;مستقلة&quot;، أي تلك التي يمكن استخدامها خارج خادم التطبيقات. وهذا هو الحال مع <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi>، الذي سنستخدمه في هذا المستند.</p>
+<p>في بيئة <bdi dir="ltr" class="odt-ltr-term">EE5</bdi>، يتم تنفيذ الطبقات بواسطة كائنات تسمى <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> (<bdi dir="ltr" class="odt-ltr-term">Enterprise Java Beans</bdi>). في الإصدارات السابقة من <bdi dir="ltr" class="odt-ltr-term">EE</bdi>، كان يُنظر إلى <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> (<bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi>) على أنها صعبة التنفيذ والاختبار، وأحيانًا كانت أدائها أقل من المتوقع. نحن نميز بين حبوب <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">entity</bdi>&quot; و <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&quot;. باختصار، تتوافق &quot;<bdi dir="ltr" class="odt-ltr-term">entity</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> مع صف في جدول قاعدة البيانات، و&quot;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> هي كائن يُستخدم لتنفيذ طبقات [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] في بنية متعددة الطبقات. أحد الانتقادات الرئيسية للطبقات المنفذة باستخدام <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> هو أنها لا يمكن استخدامها إلا داخل حاويات <bdi dir="ltr" class="odt-ltr-term">EJB</bdi>، وهي خدمة توفرها بيئة <bdi dir="ltr" class="odt-ltr-term">EE.</bdi> وهذا يجعل اختبار الوحدة مشكلة. وبالتالي، في الرسم البياني أعلاه، سيتطلب اختبار الوحدة لطبقات [الأعمال] و[<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] المبنية باستخدام <bdi dir="ltr" class="odt-ltr-term">EJBs</bdi> إعداد خادم تطبيقات، وهي عملية مرهقة إلى حد ما ولا تشجع المطور حقًا على إجراء الاختبارات بشكل متكرر.</p>
+<p>تم إنشاء إطار عمل <strong><bdi dir="ltr" class="odt-ltr-term">Spring</bdi></strong> استجابةً لتعقيد <bdi dir="ltr" class="odt-ltr-term">EJB2.</bdi> يوفر <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، ضمن بيئة <bdi dir="ltr" class="odt-ltr-term">SE</bdi>، عددًا كبيرًا من الخدمات التي توفرها عادةً بيئات <bdi dir="ltr" class="odt-ltr-term">EE.</bdi> وبالتالي، في قسم &quot;استمرارية البيانات&quot; الذي يهمنا هنا، يوفر <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> مجموعات الاتصال ومديري المعاملات التي تتطلبها التطبيقات. وقد عزز ظهور <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ثقافة اختبار الوحدات، التي أصبح تنفيذها فجأة أسهل بكثير. يسمح <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> بتنفيذ طبقات التطبيقات باستخدام كائنات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> القياسية (<bdi dir="ltr" class="odt-ltr-term">POJOs</bdi>، <bdi dir="ltr" class="odt-ltr-term">Plain Old/Ordinary Java Objects</bdi>)، مما يتيح إعادة استخدامها في سياقات أخرى.  أخيرًا، يدمج العديد من أدوات الجهات الخارجية بشكل شفاف إلى حد ما، ولا سيما أدوات الاستمرارية مثل <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> و <bdi dir="ltr" class="odt-ltr-term">iBatis</bdi> و...  </p>
 <p>تم تصميم <bdi dir="ltr" class="odt-ltr-term">Java EE</bdi> 5 لمعالجة أوجه القصور في مواصفات <bdi dir="ltr" class="odt-ltr-term">EE</bdi> السابقة. تطورت <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> إلى <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 3. هذه كائنات <bdi dir="ltr" class="odt-ltr-term">POJO</bdi> مزودة بعلامات تحددها ككائنات خاصة عندما تكون داخل حاوية <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 3. داخل الحاوية، يمكن لـ <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> الاستفادة من خدمات الحاوية (مجمع الاتصالات، مدير المعاملات، إلخ). خارج حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi>، يصبح <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> كائن <bdi dir="ltr" class="odt-ltr-term">Java</bdi> قياسي. يتم تجاهل تعليقات <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> الخاصة به.</p>
 <p>أعلاه، قمنا بتصوير <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> و<bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> كبنية تحتية (إطار عمل) محتملة لهندستنا متعددة الطبقات. هذه البنية التحتية هي التي ستوفر الخدمات التي نحتاجها: تجمع اتصالات ومدير معاملات.</p>
 <ul>
@@ -847,7 +904,7 @@
 <p>يُفترض أن يكون لدى القارئ فهم أساسي لـ <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> إذا لم يكن الأمر كذلك، يمكنك قراءة الوثيقة التالية، التي تشرح مفهوم <strong>حقن التبعية،</strong> الذي يمثل جوهر <bdi dir="ltr" class="odt-ltr-term">Spring:</bdi></p>
 <p>[<strong><bdi dir="ltr" class="odt-ltr-term">ref3</bdi></strong>]: <strong><bdi dir="ltr" class="odt-ltr-term">Spring IoC</bdi></strong> (انعكاس التحكم) [<a href="http://tahe.developpez.com/java/springioc"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://tahe.developpez.com/java/springioc</bdi></span></u></a>].</p>
 <p><a id="hibernate-spring-personnes-metier-dao"></a></p>
-<h3 id="311-eclipsespringhibernate-quot-quot">3.1.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse/Spring/Hibernate</bdi> &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;</span></h3>
+<h3 id="311-eclipsespringhibernate">3.1.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse/Spring/Hibernate</bdi> &quot; &quot;</span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> هو كما يلي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052A00000181C0649D21.png" width="661" height="192" style="display:inline-block; margin:4px;width:17.489cm;height:5.092cm;" class="odt-zoomable" data-zoom-src="images/100000000000052A00000181C0649D21.png" /></td></tr></table>
 
@@ -1264,7 +1321,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 4: يعلن الملف عن وحدة استمرارية باسم <i><bdi dir="ltr" class="odt-ltr-term">jpa</bdi> </i>تستخدم معاملات &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;محلية&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;، أي معاملات لا يوفرها حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3.</bdi> يتم إنشاء هذه المعاملات وإدارتها بواسطة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ويتم تكوينها في ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>].
+  <li>السطر 4: يعلن الملف عن وحدة استمرارية باسم <i><bdi dir="ltr" class="odt-ltr-term">jpa</bdi> </i>تستخدم معاملات &quot;محلية&quot;، أي معاملات لا يوفرها حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3.</bdi> يتم إنشاء هذه المعاملات وإدارتها بواسطة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ويتم تكوينها في ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>].
   </li>
 </ul>
 
@@ -1333,11 +1390,11 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 2-5: العلامة الجذرية &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">beans</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; لملف التكوين. لن نعلق على السمات المختلفة لهذه العلامة. تأكد من نسخها ولصقها بعناية، لأن أي خطأ في أي من هذه السمات قد يتسبب في أخطاء يصعب فهمها في بعض الأحيان.
+  <li>الأسطر 2-5: العلامة الجذرية &lt;<bdi dir="ltr" class="odt-ltr-term">beans</bdi>&gt; لملف التكوين. لن نعلق على السمات المختلفة لهذه العلامة. تأكد من نسخها ولصقها بعناية، لأن أي خطأ في أي من هذه السمات قد يتسبب في أخطاء يصعب فهمها في بعض الأحيان.
   </li>
-  <li>السطر 8: حبة &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">dao</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; هي إشارة إلى مثيل لفئة [<bdi dir="ltr" class="odt-ltr-term">dao.Dao</bdi>]. سيتم إنشاء مثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>) وسيقوم بتنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] للتطبيق.
+  <li>السطر 8: حبة &quot;<bdi dir="ltr" class="odt-ltr-term">dao</bdi>&quot; هي إشارة إلى مثيل لفئة [<bdi dir="ltr" class="odt-ltr-term">dao.Dao</bdi>]. سيتم إنشاء مثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>) وسيقوم بتنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] للتطبيق.
   </li>
-  <li>الأسطر 9-11: إنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. حبة &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">service</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; هي إشارة إلى مثيل لفئة [<bdi dir="ltr" class="odt-ltr-term">service.Service</bdi>]. سيتم إنشاء مثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>) وسيقوم بتنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] للتطبيق. لقد رأينا أن فئة [<bdi dir="ltr" class="odt-ltr-term">service.Service</bdi>] تحتوي على حقل خاص [<bdi dir="ltr" class="odt-ltr-term">IDao dao</bdi>]. يتم تهيئة هذا الحقل في السطر 10 بواسطة حبة &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">dao</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; المحددة في السطر 8.
+  <li>الأسطر 9-11: إنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. حبة &quot;<bdi dir="ltr" class="odt-ltr-term">service</bdi>&quot; هي إشارة إلى مثيل لفئة [<bdi dir="ltr" class="odt-ltr-term">service.Service</bdi>]. سيتم إنشاء مثيل واحد (<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>) وسيقوم بتنفيذ طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] للتطبيق. لقد رأينا أن فئة [<bdi dir="ltr" class="odt-ltr-term">service.Service</bdi>] تحتوي على حقل خاص [<bdi dir="ltr" class="odt-ltr-term">IDao dao</bdi>]. يتم تهيئة هذا الحقل في السطر 10 بواسطة حبة &quot;<bdi dir="ltr" class="odt-ltr-term">dao</bdi>&quot; المحددة في السطر 8.
   </li>
   <li>في النهاية، قامت الأسطر 8–11 بتكوين طبقتي [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. سنرى لاحقًا متى وكيف سيتم إنشاء مثيلات لهما.
   </li>
@@ -1347,7 +1404,7 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D3000000C2DD02A982.png" width="618" height="97" style="display:inline-block; margin:4px;width:16.339cm;height:2.566cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D3000000C2DD02A982.png" /></td></tr></table>
 
-<p>في الأعلى، كان من الممكن تسمية [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]، المشار إليه بـ &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مجمع الاتصالات&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;، بـ &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مصدر البيانات&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. يوفر مصدر البيانات خدمة &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مجمع الاتصالات&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. مع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، سنستخدم مصدر بيانات بخلاف [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]. وهو [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] من مشروع <em><bdi dir="ltr" class="odt-ltr-term">Apache Commons DBCP</bdi></em> [<bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org/commons/dbcp/</bdi>]. تم وضع أرشيفات [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] في مكتبة المستخدم [<bdi dir="ltr" class="odt-ltr-term">jpa-spring</bdi>]:</p>
+<p>في الأعلى، كان من الممكن تسمية [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]، المشار إليه بـ &quot;مجمع الاتصالات&quot;، بـ &quot;مصدر البيانات&quot;. يوفر مصدر البيانات خدمة &quot;مجمع الاتصالات&quot;. مع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، سنستخدم مصدر بيانات بخلاف [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]. وهو [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] من مشروع <em><bdi dir="ltr" class="odt-ltr-term">Apache Commons DBCP</bdi></em> [<bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org/commons/dbcp/</bdi>]. تم وضع أرشيفات [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] في مكتبة المستخدم [<bdi dir="ltr" class="odt-ltr-term">jpa-spring</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B900000078D27BF689.png" width="130" height="84" style="display:inline-block; margin:4px;width:3.431cm;height:2.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B900000078D27BF689.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
@@ -1367,7 +1424,7 @@
   </li>
   <li>السطر 25: يطلب إنشاء قاعدة البيانات (حذف وإنشاء) عند بدء تشغيل التطبيق.
   </li>
-  <li>الأسطر 28–31: تعريف &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;محمل الفئات&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. لا يمكنني شرح دور هذا الفول الذي يستخدمه <bdi dir="ltr" class="odt-ltr-term">EntityManagerFactory</bdi> في طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> بوضوح. ومع ذلك، فإنه ينطوي على تمرير اسم أرشيف إلى <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> التي تشغل التطبيق، حيث ستدير محتويات هذا الأرشيف تحميل الفئات عند بدء تشغيل التطبيق. هنا، هذا الأرشيف هو [<bdi dir="ltr" class="odt-ltr-term">spring-agent.jar</bdi>]، الموجود في مكتبة المستخدم [<bdi dir="ltr" class="odt-ltr-term">jpa-spring</bdi>] (انظر أعلاه). سنرى أن <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> لا يحتاج إلى هذا الوكيل، ولكن <bdi dir="ltr" class="odt-ltr-term">Toplink</bdi> يحتاج إليه.
+  <li>الأسطر 28–31: تعريف &quot;محمل الفئات&quot;. لا يمكنني شرح دور هذا الفول الذي يستخدمه <bdi dir="ltr" class="odt-ltr-term">EntityManagerFactory</bdi> في طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> بوضوح. ومع ذلك، فإنه ينطوي على تمرير اسم أرشيف إلى <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> التي تشغل التطبيق، حيث ستدير محتويات هذا الأرشيف تحميل الفئات عند بدء تشغيل التطبيق. هنا، هذا الأرشيف هو [<bdi dir="ltr" class="odt-ltr-term">spring-agent.jar</bdi>]، الموجود في مكتبة المستخدم [<bdi dir="ltr" class="odt-ltr-term">jpa-spring</bdi>] (انظر أعلاه). سنرى أن <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> لا يحتاج إلى هذا الوكيل، ولكن <bdi dir="ltr" class="odt-ltr-term">Toplink</bdi> يحتاج إليه.
   </li>
   <li>الأسطر 45-50: تحدد مدير المعاملات الذي سيتم استخدامه
   </li>
@@ -1453,7 +1510,7 @@
 <ul>
   <li>السطر 12: يُستخدم ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] لإنشاء كائن [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">ApplicationContext ctx</bdi>]، وهو تمثيل للملف في الذاكرة. </span>يتم إنشاء مثيلات<span style="color: #000000"> للـ <bdi dir="ltr" class="odt-ltr-term">beans</bdi> المُعرَّفة في </span>[<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] في هذه المرحلة.
   </li>
-  <li>السطر 14: يُطلب من سياق التطبيق <b><bdi dir="ltr" class="odt-ltr-term">ctx</bdi> </b>مرجعًا إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. ونعلم أن هذه الطبقة ممثلة بواسطة عنصر يُسمى &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">service</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;.
+  <li>السطر 14: يُطلب من سياق التطبيق <b><bdi dir="ltr" class="odt-ltr-term">ctx</bdi> </b>مرجعًا إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. ونعلم أن هذه الطبقة ممثلة بواسطة عنصر يُسمى &quot;<bdi dir="ltr" class="odt-ltr-term">service</bdi>&quot;.
   </li>
   <li>السطر 16: يتم مسح قاعدة البيانات باستخدام طريقة <i><bdi dir="ltr" class="odt-ltr-term">clean</bdi> </i>في الأسطر 41–45:
     <ul>
@@ -1612,7 +1669,7 @@
   </li>
   <li>السطر 14: نطلب قائمة الأشخاص الذين يبدأ اسم عائلتهم بـ <b><bdi dir="ltr" class="odt-ltr-term">p1</bdi></b>
   </li>
-  <li>نتحقق من أن القائمة الناتجة تحتوي على عنصر واحد فقط (السطر 15) وأن الاسم الأول للشخص الوحيد الذي تم العثور عليه هو &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">Paul</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; (السطر 17)
+  <li>نتحقق من أن القائمة الناتجة تحتوي على عنصر واحد فقط (السطر 15) وأن الاسم الأول للشخص الوحيد الذي تم العثور عليه هو &quot;<bdi dir="ltr" class="odt-ltr-term">Paul</bdi>&quot; (السطر 17)
   </li>
   <li>السطر 24: إنشاء شخص باسم <b><bdi dir="ltr" class="odt-ltr-term">p3</bdi></b>
   </li>
@@ -1730,7 +1787,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 5: نقوم بإنشاء مصفوفة من ثلاثة أشخاص، اثنان منهم يحملان نفس الاسم &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">p4</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. وهذا يخالف قاعدة التفرد الخاصة باسم @<bdi dir="ltr" class="odt-ltr-term">Entity</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Person</bdi></i>:
+  <li>السطر 5: نقوم بإنشاء مصفوفة من ثلاثة أشخاص، اثنان منهم يحملان نفس الاسم &quot;<bdi dir="ltr" class="odt-ltr-term">p4</bdi>&quot;. وهذا يخالف قاعدة التفرد الخاصة باسم @<bdi dir="ltr" class="odt-ltr-term">Entity</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Person</bdi></i>:
   </li>
 </ul>
 
@@ -2244,7 +2301,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003DC000001505A01A3F6.png" width="494" height="168" style="display:inline-block; margin:4px;width:13.07cm;height:4.445cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DC000001505A01A3F6.png" /></td></tr></table>
 
 <ul>
-  <li>يوجد ملف [<bdi dir="ltr" class="odt-ltr-term">spring-agent.jar</bdi>] في المجلد &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">examples</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>;/<bdi dir="ltr" class="odt-ltr-term">lib</bdi> [1]. وهو مضمن في توزيع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> (انظر <a href="#spring2"><u><span style="color: #0563c1">القسم 5.11</span></u></a>).
+  <li>يوجد ملف [<bdi dir="ltr" class="odt-ltr-term">spring-agent.jar</bdi>] في المجلد &lt;<bdi dir="ltr" class="odt-ltr-term">examples</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">lib</bdi> [1]. وهو مضمن في توزيع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> 2.<bdi dir="ltr" class="odt-ltr-term">x</bdi> (انظر <a href="#spring2"><u><span style="color: #0563c1">القسم 5.11</span></u></a>).
   </li>
   <li>في [3]، قم بإنشاء تكوين تشغيل [<bdi dir="ltr" class="odt-ltr-term">Run/Run...</bdi>]
   </li>
@@ -2259,9 +2316,9 @@
   </li>
   <li>في [6]، قم بتسمية التكوين
   </li>
-  <li>في [7]، قم بتسمية مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> المرتبط بهذا التكوين (استخدم زر &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">Browse</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;)
+  <li>في [7]، قم بتسمية مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> المرتبط بهذا التكوين (استخدم زر &quot;<bdi dir="ltr" class="odt-ltr-term">Browse</bdi>&quot;)
   </li>
-  <li>في [8]، قم بتسمية فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> التي تحتوي على الطريقة [<bdi dir="ltr" class="odt-ltr-term">main</bdi>] (استخدم زر &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">Browse</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;)
+  <li>في [8]، قم بتسمية فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> التي تحتوي على الطريقة [<bdi dir="ltr" class="odt-ltr-term">main</bdi>] (استخدم زر &quot;<bdi dir="ltr" class="odt-ltr-term">Browse</bdi>&quot;)
   </li>
   <li>في [9]، انتقل إلى علامة التبويب [<bdi dir="ltr" class="odt-ltr-term">Arguments</bdi>]. هناك، يمكنك تحديد نوعين من الوسيطات:
     <ul>
@@ -2318,7 +2375,7 @@
 <p>سنستخدم نفس المثال السابق، ولكن سنقوم بتشغيله في حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi>، وتحديدًا حاوية <bdi dir="ltr" class="odt-ltr-term">JBoss:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000528000001056434E969.png" width="660" height="131" style="display:inline-block; margin:4px;width:17.463cm;height:3.454cm;" class="odt-zoomable" data-zoom-src="images/1000000000000528000001056434E969.png" /></td></tr></table>
 
-<p>عادةً ما يتم دمج حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> في خادم تطبيقات. يوفر <bdi dir="ltr" class="odt-ltr-term">JBoss</bdi> حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مستقلة&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; يمكن استخدامها خارج خادم التطبيقات. سنكتشف أنها توفر خدمات مشابهة لتلك التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> سنحاول معرفة أي من هذه الحاويات يثبت أنه الأكثر عملية.</p>
+<p>عادةً ما يتم دمج حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> في خادم تطبيقات. يوفر <bdi dir="ltr" class="odt-ltr-term">JBoss</bdi> حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> &quot;مستقلة&quot; يمكن استخدامها خارج خادم التطبيقات. سنكتشف أنها توفر خدمات مشابهة لتلك التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> سنحاول معرفة أي من هذه الحاويات يثبت أنه الأكثر عملية.</p>
 <p>يتم وصف تثبيت حاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> في <a href="#jbossejb3"><u><span style="color: #0563c1">القسم 5.12</span></u></a>.</p>
 <h3 id="321-eclipse-jboss-ejb3-hibernate">3.2.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> / <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> / <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi></span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> هو كما يلي:</p>
@@ -2535,7 +2592,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">persistence-unit </span><span style="color:#7f007f">name</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;jpa&quot; </span><span style="color:#7f007f">transaction-type</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;RESOURCE_LOCAL&quot; </span><span style="color:#008080">/&gt;</span></span></span>
 </code></pre></div>
 
-<p>إذا لم يتم تحديد أي قيمة، فإن السمة <em><bdi dir="ltr" class="odt-ltr-term">transaction-type</bdi></em> تكون افتراضيًا &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">JTA</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; (لـ <bdi dir="ltr" class="odt-ltr-term">Java Transaction API</bdi>)، مما يشير إلى أن مدير المعاملات يتم توفيره بواسطة حاوية <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 3. يمكن لمدير &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">JTA</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; القيام بأكثر مما يمكن لمدير &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">RESOURCE</bdi>_LOCAL&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;: يمكنه إدارة المعاملات التي تمتد عبر اتصالات متعددة. باستخدام <bdi dir="ltr" class="odt-ltr-term">JTA</bdi>، يمكنك فتح المعاملة <em><bdi dir="ltr" class="odt-ltr-term">t1</bdi></em> على الاتصال <em><bdi dir="ltr" class="odt-ltr-term">c1</bdi></em> في قاعدة البيانات 1، والمعاملة <em><bdi dir="ltr" class="odt-ltr-term">t2</bdi></em> على الاتصال <em><bdi dir="ltr" class="odt-ltr-term">c2</bdi></em> في قاعدة البيانات 2، ومعاملة (<bdi dir="ltr" class="odt-ltr-term">t1</bdi>،<bdi dir="ltr" class="odt-ltr-term">t2</bdi>) كمعاملة واحدة تنجح فيها جميع العمليات (التثبيت) أو لا تنجح أي منها (التراجع).</p>
+<p>إذا لم يتم تحديد أي قيمة، فإن السمة <em><bdi dir="ltr" class="odt-ltr-term">transaction-type</bdi></em> تكون افتراضيًا &quot;<bdi dir="ltr" class="odt-ltr-term">JTA</bdi>&quot; (لـ <bdi dir="ltr" class="odt-ltr-term">Java Transaction API</bdi>)، مما يشير إلى أن مدير المعاملات يتم توفيره بواسطة حاوية <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> 3. يمكن لمدير &quot;<bdi dir="ltr" class="odt-ltr-term">JTA</bdi>&quot; القيام بأكثر مما يمكن لمدير &quot;<bdi dir="ltr" class="odt-ltr-term">RESOURCE</bdi>_LOCAL&quot;: يمكنه إدارة المعاملات التي تمتد عبر اتصالات متعددة. باستخدام <bdi dir="ltr" class="odt-ltr-term">JTA</bdi>، يمكنك فتح المعاملة <em><bdi dir="ltr" class="odt-ltr-term">t1</bdi></em> على الاتصال <em><bdi dir="ltr" class="odt-ltr-term">c1</bdi></em> في قاعدة البيانات 1، والمعاملة <em><bdi dir="ltr" class="odt-ltr-term">t2</bdi></em> على الاتصال <em><bdi dir="ltr" class="odt-ltr-term">c2</bdi></em> في قاعدة البيانات 2، ومعاملة (<bdi dir="ltr" class="odt-ltr-term">t1</bdi>،<bdi dir="ltr" class="odt-ltr-term">t2</bdi>) كمعاملة واحدة تنجح فيها جميع العمليات (التثبيت) أو لا تنجح أي منها (التراجع).</p>
 <p>هنا، نستخدم مدير <bdi dir="ltr" class="odt-ltr-term">JTA</bdi> الخاص بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3.</bdi></p>
 <ul>
   <li>السطر 11: يعلن عن مصدر البيانات الذي يجب أن يستخدمه مدير <bdi dir="ltr" class="odt-ltr-term">JTA.</bdi> يتم تحديد هذا كاسم <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi> (واجهة تسمية ودليل <bdi dir="ltr" class="odt-ltr-term">Java</bdi>). يتم تعريف مصدر البيانات هذا في [<bdi dir="ltr" class="odt-ltr-term">jboss-config.xml</bdi>].
@@ -2591,13 +2648,13 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: العلامة الجذرية للملف هي &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<b><bdi dir="ltr" class="odt-ltr-term">deployment</bdi></b>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>;. ويهدف ملف النشر هذا في المقام الأول إلى تكوين مصدر البيانات<b> <bdi dir="ltr" class="odt-ltr-term">java:/datasource</bdi> </b>الذي تم تعريفه في <b>ملف <bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi></b>.
+  <li>السطر 3: العلامة الجذرية للملف هي &lt;<b><bdi dir="ltr" class="odt-ltr-term">deployment</bdi></b>&gt;. ويهدف ملف النشر هذا في المقام الأول إلى تكوين مصدر البيانات<b> <bdi dir="ltr" class="odt-ltr-term">java:/datasource</bdi> </b>الذي تم تعريفه في <b>ملف <bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi></b>.
   </li>
-  <li>يتم تعريف مصدر البيانات بواسطة حبة &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<i><bdi dir="ltr" class="odt-ltr-term">datasource</bdi></i>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; في السطر 38. يمكننا أن نرى أن مصدر البيانات يتم الحصول عليه (السطر 40) من &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;مصنع&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; تم تعريفه بواسطة حبة &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">datasourceFactory</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; في السطر 7. للحصول على مصدر بيانات التطبيق، يجب على العميل استدعاء طريقة [<bdi dir="ltr" class="odt-ltr-term">getDatasource</bdi>] الخاصة <i>بالمصنع </i>(السطر 39).
+  <li>يتم تعريف مصدر البيانات بواسطة حبة &quot;<i><bdi dir="ltr" class="odt-ltr-term">datasource</bdi></i>&quot; في السطر 38. يمكننا أن نرى أن مصدر البيانات يتم الحصول عليه (السطر 40) من &quot;مصنع&quot; تم تعريفه بواسطة حبة &quot;<bdi dir="ltr" class="odt-ltr-term">datasourceFactory</bdi>&quot; في السطر 7. للحصول على مصدر بيانات التطبيق، يجب على العميل استدعاء طريقة [<bdi dir="ltr" class="odt-ltr-term">getDatasource</bdi>] الخاصة <i>بالمصنع </i>(السطر 39).
   </li>
   <li>السطر 7: <i>المصنع </i>الذي يوفر مصدر البيانات هو فئة <bdi dir="ltr" class="odt-ltr-term">JBoss.</bdi>
   </li>
-  <li>السطر 9: اسم <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi> لمصدر البيانات. يجب أن يكون هذا الاسم هو نفسه الاسم المعلن في العلامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">jta-data-source</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; في ملف <b><bdi dir="ltr" class="odt-ltr-term">persistence</bdi></b>.<b><bdi dir="ltr" class="odt-ltr-term">xml</bdi></b>. في الواقع، ستستخدم طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> اسم <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi> هذا لطلب مصدر البيانات.
+  <li>السطر 9: اسم <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi> لمصدر البيانات. يجب أن يكون هذا الاسم هو نفسه الاسم المعلن في العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">jta-data-source</bdi>&gt; في ملف <b><bdi dir="ltr" class="odt-ltr-term">persistence</bdi></b>.<b><bdi dir="ltr" class="odt-ltr-term">xml</bdi></b>. في الواقع، ستستخدم طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> اسم <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi> هذا لطلب مصدر البيانات.
   </li>
   <li>الأسطر 12-15: شيء أكثر قياسية: خصائص <bdi dir="ltr" class="odt-ltr-term">JDBC</bdi> للاتصال بنظام إدارة قواعد البيانات
   </li>
@@ -2694,7 +2751,7 @@
   </li>
   <li><span style="color: #000000">السطر 25: يتم تهيئة سياق <bdi dir="ltr" class="odt-ltr-term">JNDI.</bdi> سنستخدمه لتحديد موقع <bdi dir="ltr" class="odt-ltr-term">EJBs.</bdi></span>
   </li>
-  <li><span style="color: #000000">السطر 28: يتم طلب <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> المطابق لفئة [<bdi dir="ltr" class="odt-ltr-term">Service</bdi>] في طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] من خدمة <bdi dir="ltr" class="odt-ltr-term">JNDI.</bdi> يمكن الوصول إلى <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> محليًا أو عبر الشبكة. هنا، يشير الاسم &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">Service/local</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; لـ <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> الذي يتم البحث عنه إلى فئة [<bdi dir="ltr" class="odt-ltr-term">Service</bdi>] في طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] للوصول المحلي.</span>
+  <li><span style="color: #000000">السطر 28: يتم طلب <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> المطابق لفئة [<bdi dir="ltr" class="odt-ltr-term">Service</bdi>] في طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] من خدمة <bdi dir="ltr" class="odt-ltr-term">JNDI.</bdi> يمكن الوصول إلى <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> محليًا أو عبر الشبكة. هنا، يشير الاسم &quot;<bdi dir="ltr" class="odt-ltr-term">Service/local</bdi>&quot; لـ <bdi dir="ltr" class="odt-ltr-term">EJB</bdi> الذي يتم البحث عنه إلى فئة [<bdi dir="ltr" class="odt-ltr-term">Service</bdi>] في طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] للوصول المحلي.</span>
   </li>
   <li><span style="color: #000000">الآن، تم نشر التطبيق، ولدينا مرجع إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. نحن في نفس الموقف الذي نحن فيه بعد السطر 11 أدناه في كود [<bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>] لإصدار <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> لذلك نجد نفس الكود في كلا الإصدارين.</span>
   </li>
@@ -2934,7 +2991,7 @@
 <h3 id="329-jpa">3.2.9. <span style="color: #4f81bd">تغيير تنفيذ <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
 <p>كما ذكرنا أعلاه، لم نجد أي أمثلة على استخدام حاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> مع <bdi dir="ltr" class="odt-ltr-term">TopLink.</bdi> حتى وقت كتابة هذا المقال (يونيو 2007)، ما زلت لا أعرف ما إذا كان هذا التكوين ممكنًا أم لا.</p>
 <h2 id="33">3.3. <span style="color: #4f81bd">أمثلة أخرى</span></h2>
-<p>دعونا نلخص ما تم إنجازه فيما يتعلق بكيان &amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>&amp;<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;. لقد أنشأنا ثلاث بنى لتشغيل نفس الاختبارات:</p>
+<p>دعونا نلخص ما تم إنجازه فيما يتعلق بكيان &quot;<em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>&quot;. لقد أنشأنا ثلاث بنى لتشغيل نفس الاختبارات:</p>
 <p>1 - تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">Spring/Hibernate</bdi></strong></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005200000010B403DD296.png" width="656" height="133" style="display:inline-block; margin:4px;width:17.357cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005200000010B403DD296.png" /></td></tr></table>
 
@@ -3145,9 +3202,9 @@
   </li>
   <li><span style="color: #000000">الأسطر 32–35: يحتوي التطبيق على صفحة خطأ افتراضية يتم عرضها عندما يواجه خادم الويب استثناءً لا يعالجه التطبيق.</span>
     <ul>
-      <li><span style="color: #000000">السطر 37: تحدد العلامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; نوع الاستثناء الذي تعالجه توجيهات &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>;؛ وهنا، يكون النوع هو [<bdi dir="ltr" class="odt-ltr-term">java.lang.Exception</bdi>] وأنواعه الفرعية، مما يعني جميع الاستثناءات.</span>
+      <li><span style="color: #000000">السطر 37: تحدد العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&gt; نوع الاستثناء الذي تعالجه توجيهات &lt;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&gt;؛ وهنا، يكون النوع هو [<bdi dir="ltr" class="odt-ltr-term">java.lang.Exception</bdi>] وأنواعه الفرعية، مما يعني جميع الاستثناءات.</span>
       </li>
-      <li><span style="color: #000000">السطر 38: تحدد علامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">location</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي سيتم عرضها عند حدوث استثناء من النوع المحدد بواسطة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>;. يتوفر الاستثناء </span><b>الذي </b><span style="color: #000000">حدث في هذه الصفحة في كائن باسم <bdi dir="ltr" class="odt-ltr-term">exception</bdi> إذا كانت الصفحة تحتوي على التوجيه:</span>
+      <li><span style="color: #000000">السطر 38: تحدد علامة &lt;<bdi dir="ltr" class="odt-ltr-term">location</bdi>&gt; صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي سيتم عرضها عند حدوث استثناء من النوع المحدد بواسطة &lt;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&gt;. يتوفر الاستثناء </span><b>الذي </b><span style="color: #000000">حدث في هذه الصفحة في كائن باسم <bdi dir="ltr" class="odt-ltr-term">exception</bdi> إذا كانت الصفحة تحتوي على التوجيه:</span>
       </li>
     </ul>
   </li>
@@ -3160,7 +3217,7 @@
 <ul>
   <li><span style="color: #000000">(تابع)</span>
     <ul>
-      <li><span style="color: #000000">إذا حدد &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; النوع <bdi dir="ltr" class="odt-ltr-term">T1</bdi> وتم تمرير استثناء من النوع <bdi dir="ltr" class="odt-ltr-term">T2</bdi> (غير مشتق من <bdi dir="ltr" class="odt-ltr-term">T1</bdi>) إلى خادم الويب، فإن الخادم يرسل إلى العميل صفحة استثناء خاصة، والتي عادةً ما تكون غير سهلة الاستخدام. ومن هنا تأتي أهمية علامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>].</span>
+      <li><span style="color: #000000">إذا حدد &lt;<bdi dir="ltr" class="odt-ltr-term">exception-type</bdi>&gt; النوع <bdi dir="ltr" class="odt-ltr-term">T1</bdi> وتم تمرير استثناء من النوع <bdi dir="ltr" class="odt-ltr-term">T2</bdi> (غير مشتق من <bdi dir="ltr" class="odt-ltr-term">T1</bdi>) إلى خادم الويب، فإن الخادم يرسل إلى العميل صفحة استثناء خاصة، والتي عادةً ما تكون غير سهلة الاستخدام. ومن هنا تأتي أهمية علامة &lt;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&gt; في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>].</span>
       </li>
     </ul>
   </li>
@@ -3254,7 +3311,7 @@
   </li>
   <li>السطر 41: يتم إجراء الأمر نفسه بالنسبة لرابط [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>].
   </li>
-  <li>السطر 37: لعرض تاريخ ميلاد الشخص بتنسيق <bdi dir="ltr" class="odt-ltr-term">DD/MM/YYYY</bdi>، نستخدم العلامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">dt</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; من مكتبة العلامات [<bdi dir="ltr" class="odt-ltr-term">DateTime</bdi>] لمشروع <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> [<bdi dir="ltr" class="odt-ltr-term">Jakarta Taglibs</bdi>]:
+  <li>السطر 37: لعرض تاريخ ميلاد الشخص بتنسيق <bdi dir="ltr" class="odt-ltr-term">DD/MM/YYYY</bdi>، نستخدم العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">dt</bdi>&gt; من مكتبة العلامات [<bdi dir="ltr" class="odt-ltr-term">DateTime</bdi>] لمشروع <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> [<bdi dir="ltr" class="odt-ltr-term">Jakarta Taglibs</bdi>]:
   </li>
 </ul>
 
@@ -3399,7 +3456,7 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يشير إلى عدد غير صحيح للأطفال – فارغ في الحالات الأخرى</div></td></tr></table>
 
 <ul>
-  <li>الأسطر 11-15: إذا فشل إرسال النموذج (<bdi dir="ltr" class="odt-ltr-term">POST</bdi>)، فسيتم إرجاع [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>!=&#<bdi dir="ltr" class="odt-ltr-term">x27</bdi>;&#<bdi dir="ltr" class="odt-ltr-term">x27</bdi>;] وسيتم عرض رسالة خطأ.
+  <li>الأسطر 11-15: إذا فشل إرسال النموذج (<bdi dir="ltr" class="odt-ltr-term">POST</bdi>)، فسيتم إرجاع [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>!=&#x27;&#x27;] وسيتم عرض رسالة خطأ.
   </li>
   <li>السطر 16: سيتم إرسال النموذج إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>]
   </li>
@@ -3434,20 +3491,13 @@
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-الصفحة [<a id="spring-mvc-37-exception-jsp"></a> <bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]
-
+<p>الصفحة [<a id="spring-mvc-37-exception-jsp"></a> <bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-تُستخدم هذه الصفحة لعرض رسالة تشير إلى حدوث استثناء لم يتم التعامل معه من قبل التطبيق وتم تمريره إلى خادم الويب.
-
-على سبيل المثال، دعونا نحذف شخصًا غير موجود في المجموعة:
-
+<p>تُستخدم هذه الصفحة لعرض رسالة تشير إلى حدوث استثناء لم يتم التعامل معه من قبل التطبيق وتم تمريره إلى خادم الويب.</p>
+<p>على سبيل المثال، دعونا نحذف شخصًا غير موجود في المجموعة:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054D0000014CEFC085AA.png" width="679" height="166" style="display:inline-block; margin:4px;width:17.953cm;height:4.392cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000014CEFC085AA.png" /></td></tr></table>
 
-فيما يلي كود عرض [<bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]:
-
-
-
-
+<p>فيما يلي كود عرض [<bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#bf5f3f">&lt;%@ </span><span style="color:#3f7f7f">page </span><span style="color:#7f007f">language</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;java&quot; </span><span style="color:#7f007f">pageEncoding</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;ISO-8859-1&quot; </span><span style="color:#7f007f">contentType</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;text/html;charset=ISO-8859-1&quot;</span><span style="color:#bf5f3f">%&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#bf5f3f">&lt;%@ </span><span style="color:#3f7f7f">taglib </span><span style="color:#7f007f">uri</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;/WEB-INF/c.tld&quot; </span><span style="color:#7f007f">prefix</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;c&quot; </span><span style="color:#bf5f3f">%&gt;</span></span></span>
@@ -3471,12 +3521,10 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-
 <ul>
   <li>تتلقى هذه العرضة مفتاحًا في قالبها، وهو عنصر [<b><bdi dir="ltr" class="odt-ltr-term">exception</bdi>]</b>، الذي يمثل الاستثناء الذي اعترضه خادم الويب. لكي يقوم خادم الويب بتضمين هذا العنصر في قالب صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، يجب أن تكون الصفحة قد عرّفت العلامة في السطر 3.
   </li>
 </ul>
-
 
 <ul>
   <li>السطر 6: تم تعيين رمز حالة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للاستجابة على 200. هذا هو رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الأول في الاستجابة. يُعلم الرمز 200 العميل بأن طلبه قد تم تلبيته. بشكل عام، يتم تضمين مستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> في استجابة الخادم. وهذا هو الحال هنا. إذا لم يتم تعيين رمز حالة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للاستجابة على 200، فسيكون له القيمة 500 هنا، مما يعني حدوث خطأ. في الواقع، عندما يعترض خادم الويب استثناءً لم يتم معالجته، فإنه يعتبر ذلك حالة غير طبيعية ويشير إليها برمز 500. يختلف الرد على رمز <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> 500 باختلاف المتصفح: يعرض <bdi dir="ltr" class="odt-ltr-term">Firefox</bdi> مستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> الذي قد يصاحب هذا الرد، بينما يتجاهل <bdi dir="ltr" class="odt-ltr-term">IE</bdi> هذا المستند ويعرض صفحته الخاصة. لهذا السبب استبدلنا الرمز 500 بالرمز 200.
@@ -3488,20 +3536,11 @@
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-عرض [<a id="personnes-01-erreurs-jsp"></a> -<bdi dir="ltr" class="odt-ltr-term">errors</bdi><a id="spring-mvc-37-exception-jsp1"></a> .<bdi dir="ltr" class="odt-ltr-term">jsp</bdi>]
-
+<p>عرض [<a id="personnes-01-erreurs-jsp"></a> -<bdi dir="ltr" class="odt-ltr-term">errors</bdi><a id="spring-mvc-37-exception-jsp1"></a> .<bdi dir="ltr" class="odt-ltr-term">jsp</bdi>]</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-يُستخدم لعرض صفحة تُبلغ عن أخطاء تهيئة التطبيق، أي الأخطاء التي تم اكتشافها أثناء تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] لبرنامج خدمة التحكم. قد يكون ذلك، على سبيل المثال، عدم وجود معلمة في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>]، كما هو موضح في المثال أدناه:
-
-
-<img src="images/10000000000001A900000092AA44CF2B.png" width="297" height="102" style="width:7.87cm;height:2.704cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A900000092AA44CF2B.png" />
-
-
-فيما يلي كود صفحة [<bdi dir="ltr" class="odt-ltr-term">errors.jsp</bdi>]:
-
-
-
-
+<p>يُستخدم لعرض صفحة تُبلغ عن أخطاء تهيئة التطبيق، أي الأخطاء التي تم اكتشافها أثناء تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] لبرنامج خدمة التحكم. قد يكون ذلك، على سبيل المثال، عدم وجود معلمة في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>]، كما هو موضح في المثال أدناه:</p>
+<p><img src="images/10000000000001A900000092AA44CF2B.png" width="297" height="102" style="width:7.87cm;height:2.704cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A900000092AA44CF2B.png" /></p>
+<p>فيما يلي كود صفحة [<bdi dir="ltr" class="odt-ltr-term">errors.jsp</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#bf5f3f">&lt;%@ </span><span style="color:#3f7f7f">page </span><span style="color:#7f007f">language</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;java&quot; </span><span style="color:#7f007f">contentType</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;text/html; charset=ISO-8859-1&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#2a00ff">    </span><span style="color:#7f007f">pageEncoding</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;ISO-8859-1&quot;</span><span style="color:#bf5f3f">%&gt;</span></span></span>
@@ -3523,27 +3562,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-تستقبل الصفحة عنصر [<bdi dir="ltr" class="odt-ltr-term">errors</bdi>] في قالبها، وهو عبارة عن [<bdi dir="ltr" class="odt-ltr-term">ArrayList</bdi>] من كائنات [<bdi dir="ltr" class="odt-ltr-term">String</bdi>]؛ وهذه هي رسائل الخطأ. يتم عرضها بواسطة الحلقة في الأسطر 13–15.
-
-
-#### 3.4.3.3. <span style="color: #4f81bd">وحدة التحكم في التطبيق</span>
-
-
-يتم تعريف وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application</bdi>] في حزمة [<bdi dir="ltr" class="odt-ltr-term">web</bdi>]:
-
-
-<img src="images/10000000000000A6000000696692AF1F.png" width="116" height="73" style="width:3.069cm;height:1.94cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A6000000696692AF1F.png" />
-
-
+<p>تستقبل الصفحة عنصر [<bdi dir="ltr" class="odt-ltr-term">errors</bdi>] في قالبها، وهو عبارة عن [<bdi dir="ltr" class="odt-ltr-term">ArrayList</bdi>] من كائنات [<bdi dir="ltr" class="odt-ltr-term">String</bdi>]؛ وهذه هي رسائل الخطأ. يتم عرضها بواسطة الحلقة في الأسطر 13–15.</p>
+<h4 id="3433">3.4.3.3. <span style="color: #4f81bd">وحدة التحكم في التطبيق</span></h4>
+<p>يتم تعريف وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application</bdi>] في حزمة [<bdi dir="ltr" class="odt-ltr-term">web</bdi>]:</p>
+<p><img src="images/10000000000000A6000000696692AF1F.png" width="116" height="73" style="width:3.069cm;height:1.94cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A6000000696692AF1F.png" /></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-<a id="personnes-01-init"></a> <bdi dir="ltr" class="odt-ltr-term">ture</bdi> هيكل وبدء تشغيل وحدة التحكم
-
+<p><a id="personnes-01-init"></a> <bdi dir="ltr" class="odt-ltr-term">ture</bdi> هيكل وبدء تشغيل وحدة التحكم</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-هيكل وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application</bdi>] هو كما يلي:
-
-
-
-
+<p>هيكل وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application</bdi>] هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> web;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -3654,21 +3680,15 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-
 <ul>
   <li>الأسطر 21–34: نسترد المعلمات المحددة في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>].
   </li>
-  <li>الأسطر 37-39:  يجب أن تكون المعلمة [<bdi dir="ltr" class="odt-ltr-term">urlErrors</bdi>] موجودة لأنها تحدد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لعرض [<bdi dir="ltr" class="odt-ltr-term">errors</bdi>] القادر على عرض أي أخطاء في التهيئة. إذا لم تكن موجودة، يتم إنهاء التطبيق عن طريق إلقاء استثناء [<bdi dir="ltr" class="odt-ltr-term">ServletException</bdi>] (السطر 39). سيتم نشر هذا الاستثناء إلى خادم الويب ومعالجته بواسطة العلامة &<bdi dir="ltr" class="odt-ltr-term">lt</bdi>;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&<bdi dir="ltr" class="odt-ltr-term">gt</bdi>; في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>]. وبالتالي يتم عرض عرض [<bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]:
+  <li>الأسطر 37-39:  يجب أن تكون المعلمة [<bdi dir="ltr" class="odt-ltr-term">urlErrors</bdi>] موجودة لأنها تحدد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لعرض [<bdi dir="ltr" class="odt-ltr-term">errors</bdi>] القادر على عرض أي أخطاء في التهيئة. إذا لم تكن موجودة، يتم إنهاء التطبيق عن طريق إلقاء استثناء [<bdi dir="ltr" class="odt-ltr-term">ServletException</bdi>] (السطر 39). سيتم نشر هذا الاستثناء إلى خادم الويب ومعالجته بواسطة العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">error-page</bdi>&gt; في ملف [<bdi dir="ltr" class="odt-ltr-term">web.xml</bdi>]. وبالتالي يتم عرض عرض [<bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]:
   </li>
 </ul>
 
-
-<img src="images/10000000000001FF000000B3B85301EA.png" width="359" height="126" style="width:9.5cm;height:3.328cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001FF000000B3B85301EA.png" />
-
-
-رابط [العودة إلى القائمة] أعلاه غير نشط. يؤدي النقر عليه إلى ظهور نفس الاستجابة ما دامت التطبيق لم يتم تعديله وإعادة تحميله. وهو مفيد في حالات الاستثناءات الأخرى، كما رأينا سابقًا.
-
-
+<p><img src="images/10000000000001FF000000B3B85301EA.png" width="359" height="126" style="width:9.5cm;height:3.328cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001FF000000B3B85301EA.png" /></p>
+<p>رابط [العودة إلى القائمة] أعلاه غير نشط. يؤدي النقر عليه إلى ظهور نفس الاستجابة ما دامت التطبيق لم يتم تعديله وإعادة تحميله. وهو مفيد في حالات الاستثناءات الأخرى، كما رأينا سابقًا.</p>
 <ul>
   <li>الأسطر 40–43: استخدم ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> لاسترداد مرجع إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. بعد تهيئة وحدة التحكم، تحتوي طرقها على مرجع [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] (السطر 15) الذي ستستخدمه لتنفيذ الإجراءات التي يطلبها المستخدم. سيتم اعتراض هذه الإجراءات بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doGet</bdi>]، والتي ستقوم بمعالجتها بواسطة طريقة محددة في وحدة التحكم:
   </li>
@@ -3689,14 +3709,9 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi></div></td></tr></table>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-طريقة [<bdi dir="ltr" class="odt-ltr-term">doGet</bdi><span style="color: #000000">]</span>
-
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doGet</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<span style="color: #000000">الغرض من هذه الطريقة هو توجيه معالجة الإجراءات التي يطلبها المستخدم إلى الطريقة الصحيحة. وفيما يلي كودها:</span>
-
-
-
-
+<p><span style="color: #000000">الغرض من هذه الطريقة هو توجيه معالجة الإجراءات التي يطلبها المستخدم إلى الطريقة الصحيحة. وفيما يلي كودها:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">// GET</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@SuppressWarnings</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;unchecked&quot;</span><span style="color:#000000">)</span></span></span>
@@ -3745,7 +3760,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 </code></pre></div>
 
-
 <ul>
   <li>الأسطر 7–13: نتحقق من أن قائمة أخطاء التهيئة فارغة. إذا لم تكن كذلك، نعرض طريقة العرض [<bdi dir="ltr" class="odt-ltr-term">errors</bdi>(<bdi dir="ltr" class="odt-ltr-term">errors</bdi>)]، والتي ستبلغ عن الخطأ (الأخطاء).
   </li>
@@ -3766,20 +3780,11 @@
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-طريقة [<bdi dir="ltr" class="odt-ltr-term">doListPersonnes</bdi><span style="color: #000000">]</span>
-
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doListPersonnes</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، الذي يطلب قائمة الأشخاص:</span>
-
-
-<img src="images/1000000000000289000000FBFF1CEC65.png" width="387" height="150" style="width:10.239cm;height:3.96cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000289000000FBFF1CEC65.png" />
-
-
-وإليك كودها:
-
-
-
-
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، الذي يطلب قائمة الأشخاص:</span></p>
+<p><img src="images/1000000000000289000000FBFF1CEC65.png" width="387" height="150" style="width:10.239cm;height:3.96cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000289000000FBFF1CEC65.png" /></p>
+<p>وإليك كودها:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// display list of persons</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doListPersonnes(HttpServletRequest request, HttpServletResponse response) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> ServletException, IOException {</span></span></span>
@@ -3790,29 +3795,19 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-
 <ul>
-  <li><span style="color: #000000">السطر 4: نطلب قائمة الأشخاص في المجموعة من طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] ونخزنها في النموذج تحت المفتاح &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">people</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;.</span>
+  <li><span style="color: #000000">السطر 4: نطلب قائمة الأشخاص في المجموعة من طبقة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] ونخزنها في النموذج تحت المفتاح &quot;<bdi dir="ltr" class="odt-ltr-term">people</bdi>&quot;.</span>
   </li>
   <li><span style="color: #000000">السطر 6: يتم عرض طريقة العرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>] الموضحة </span>في <a href="#spring-mvc-37-list-jsp"><u><span style="color: #0563c1">القسم 3.4.3.2</span></u></a><span style="color: #000000">.</span>
   </li>
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-طريقة [<bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi><span style="color: #000000">]</span>
-
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يطلب حذف الشخص ذي المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000"> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>هو عنوان روابط [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:
-
-
-<img src="images/100000000000026D000001057820C57B.png" width="435" height="183" style="width:11.501cm;height:4.835cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026D000001057820C57B.png" />
-
-
-والذي يكون كوده كما يلي:
-
-
-
-
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يطلب حذف الشخص ذي المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000"> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>هو عنوان روابط [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
+<p><img src="images/100000000000026D000001057820C57B.png" width="435" height="183" style="width:11.501cm;height:4.835cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026D000001057820C57B.png" /></p>
+<p>والذي يكون كوده كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
@@ -3835,11 +3830,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-يُظهر السطر 12 عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] للرابط [حذف]. يجب أن تقوم الطريقة [<bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi>]، التي تتعامل مع عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا، بحذف الشخص الذي يحمل المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi> ثم عرض القائمة المحدثة للأشخاص في المجموعة. وفيما يلي كودها:
-
-
-
-
+<p>يُظهر السطر 12 عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] للرابط [حذف]. يجب أن تقوم الطريقة [<bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi>]، التي تتعامل مع عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا، بحذف الشخص الذي يحمل المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi> ثم عرض القائمة المحدثة للأشخاص في المجموعة. وفيما يلي كودها:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// deleting a person</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doDeletePersonne(HttpServletRequest request, HttpServletResponse response) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> ServletException, IOException {</span></span></span>
@@ -3852,7 +3843,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 </code></pre></div>
 
-
 <ul>
   <li><span style="color: #000000">السطر 4: عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تتم معالجته هو [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]. نسترد القيمة [<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] من المعلمة [<bdi dir="ltr" class="odt-ltr-term">id</bdi>].</span>
   </li>
@@ -3860,31 +3850,18 @@
   </li>
 </ul>
 
-
-<img src="images/10000000000001DB000000B57C26FF30.png" width="333" height="127" style="width:8.8cm;height:3.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DB000000B57C26FF30.png" />
-
-
-
+<p><img src="images/10000000000001DB000000B57C26FF30.png" width="333" height="127" style="width:8.8cm;height:3.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DB000000B57C26FF30.png" /></p>
 <ul>
   <li><span style="color: #000000">السطر 9: إذا نجح الحذف (لم تحدث استثناءات)، يتم إعادة توجيه العميل إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> النسبي [<bdi dir="ltr" class="odt-ltr-term">list</bdi>]. وبما أن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تمت معالجته للتو كان [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>]، فإن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لإعادة التوجيه سيكون [/<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]. وبالتالي، سيقوم المتصفح بتنفيذ طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، والذي سيعرض قائمة الأشخاص.</span>
   </li>
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi><span style="color: #000000">]</span>
-
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<span style="color: #000000">تتعامل هذه الطريقة مع الطلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يسترد النموذج الخاص بتحديث الشخص ذي المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>يتم استخدام عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000">[/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>للرابطين [<bdi dir="ltr" class="odt-ltr-term">Edit</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">Add</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:
-
-
-<img src="images/10000000000002750000010BD6DBEA40.png" width="440" height="187" style="width:11.65cm;height:4.944cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000010BD6DBEA40.png" />
-
-
-والذي يكون كوده كما يلي:
-
-
-
-
+<p><span style="color: #000000">تتعامل هذه الطريقة مع الطلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يسترد النموذج الخاص بتحديث الشخص ذي المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>يتم استخدام عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000">[/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>للرابطين [<bdi dir="ltr" class="odt-ltr-term">Edit</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">Add</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
+<p><img src="images/10000000000002750000010BD6DBEA40.png" width="440" height="187" style="width:11.65cm;height:4.944cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000010BD6DBEA40.png" /></p>
+<p>والذي يكون كوده كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
@@ -3907,21 +3884,15 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">html</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-في السطر 11، نرى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] لرابط [تحرير]، وفي السطر 17، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=-1] لرابط [إضافة]. يجب أن تعرض طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPersonne</bdi>] نموذج التحرير للشخص الذي يحمل المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>، أو إذا كانت عملية إضافة، فيجب أن تعرض نموذجًا فارغًا.
-
+<p>في السطر 11، نرى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] لرابط [تحرير]، وفي السطر 17، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=-1] لرابط [إضافة]. يجب أن تعرض طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPersonne</bdi>] نموذج التحرير للشخص الذي يحمل المعرف <bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>، أو إذا كانت عملية إضافة، فيجب أن تعرض نموذجًا فارغًا.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F1000001DDAC30A2B2.png" width="633" height="239" style="display:inline-block; margin:4px;width:16.736cm;height:6.311cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F1000001DDAC30A2B2.png" /></td></tr></table>
-
 
 <ul>
   <li>في [1] أعلاه، نموذج الإضافة، وفي [2]، نموذج التعديل.
   </li>
 </ul>
 
-فيما يلي كود طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi>]:
-
-
-
-
+<p>فيما يلي كود طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// modify / add a person</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doEditPersonne(HttpServletRequest request, HttpServletResponse response) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> ServletException, IOException {</span></span></span>
@@ -3959,7 +3930,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 </code></pre></div>
 
-
 <ul>
   <li><span style="color: #000000">يستهدف طلب <bdi dir="ltr" class="odt-ltr-term">GET</bdi> عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> بالشكل [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?<bdi dir="ltr" class="odt-ltr-term">id</bdi>=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]. في السطر 4، نسترد قيمة [<bdi dir="ltr" class="odt-ltr-term">id</bdi>]. ثم هناك حالتان:</span>
     <ol>
@@ -3973,12 +3943,10 @@
   </li>
 </ul>
 
-
 <ul>
   <li><span style="color: #000000">يتم وضع كائن [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] الناتج في قالب الصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]. يتضمن هذا القالب العناصر التالية: [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>, <bdi dir="ltr" class="odt-ltr-term">id</bdi>, <bdi dir="ltr" class="odt-ltr-term">version</bdi>, <bdi dir="ltr" class="odt-ltr-term">firstName</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorFirstName</bdi>, <bdi dir="ltr" class="odt-ltr-term">lastName</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorLastName</bdi>, <bdi dir="ltr" class="odt-ltr-term">birthDate</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorBirthDate</bdi>, <bdi dir="ltr" class="odt-ltr-term">married</bdi>, <bdi dir="ltr" class="odt-ltr-term">numberOfChildren</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorNumberOfChildren</bdi>]. يتم تهيئة هذه العناصر في الأسطر 19–31، باستثناء تلك التي تكون قيمتها سلسلة فارغة [<bdi dir="ltr" class="odt-ltr-term">erreurPrenom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurNom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurDateNaissance</bdi>،  <bdi dir="ltr" class="odt-ltr-term">erreurNbEnfants</bdi>]. ونعلم أنه في حالة غيابها عن القالب، ستعرض مكتبة <bdi dir="ltr" class="odt-ltr-term">JSTL</bdi> سلسلة فارغة كقيمة لها. وعلى الرغم من أن عنصر [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>] يحتوي أيضًا على سلسلة فارغة كقيمة له، إلا أنه يتم تهيئته لأن فحصًا يتم إجراؤه على قيمته في صفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>].</span>
   </li>
 </ul>
-
 
 <ul>
   <li><span style="color: #000000">بمجرد أن يصبح النموذج جاهزًا، يتم تمرير التحكم إلى الصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]، السطر 33، والتي ستقوم بإنشاء عرض [<bdi dir="ltr" class="odt-ltr-term">edit</bdi>].</span>
@@ -3986,20 +3954,11 @@
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
-طريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePersonne</bdi><span style="color: #000000">]</span>
-
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePersonne</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">POST</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>]، الذي يتحقق من صحة نموذج التحديث. يتم تشغيل هذا الطلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> بواسطة الزر [<bdi dir="ltr" class="odt-ltr-term">Validate</bdi>]</span>:
-
-
-<img src="images/10000000000001CC0000017B11D6D4A5.png" width="322" height="265" style="width:8.52cm;height:7.02cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CC0000017B11D6D4A5.png" />
-
-
-<span style="color: #000000">دعونا نستعرض عناصر الإدخال في نموذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> في العرض أعلاه:</span>
-
-
-
-
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">POST</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>]، الذي يتحقق من صحة نموذج التحديث. يتم تشغيل هذا الطلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> بواسطة الزر [<bdi dir="ltr" class="odt-ltr-term">Validate</bdi>]</span>:</p>
+<p><img src="images/10000000000001CC0000017B11D6D4A5.png" width="322" height="265" style="width:8.52cm;height:7.02cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CC0000017B11D6D4A5.png" /></p>
+<p><span style="color: #000000">دعونا نستعرض عناصر الإدخال في نموذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> في العرض أعلاه:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">form </span><span style="color:#7f007f">method</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;post&quot; </span><span style="color:#7f007f">action</span><span style="color:#000000">=</span>&quot;<span style="color:#008080">&lt;</span><span style="color:#3f7f7f">c:url</span><span style="color:#000000"> </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;/do/validate&quot;</span><span style="color:#008080">/&gt;</span>&quot;<span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
@@ -4027,11 +3986,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">form</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<span style="color: #000000">يحتوي طلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> على المعلمات [<bdi dir="ltr" class="odt-ltr-term">first</bdi>\_name, <bdi dir="ltr" class="odt-ltr-term">last</bdi>\_name, <bdi dir="ltr" class="odt-ltr-term">date</bdi>\_of\_birth, <bdi dir="ltr" class="odt-ltr-term">married</bdi>\_to, <bdi dir="ltr" class="odt-ltr-term">number</bdi>\_of\_children, <bdi dir="ltr" class="odt-ltr-term">id</bdi>] ويتم إرساله إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>] (السطر 1). تتم معالجته بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePerson</bdi>] التالية:</span>
-
-
-
-
+<p><span style="color: #000000">يحتوي طلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> على المعلمات [<bdi dir="ltr" class="odt-ltr-term">first</bdi>_name, <bdi dir="ltr" class="odt-ltr-term">last</bdi>_name, <bdi dir="ltr" class="odt-ltr-term">date</bdi>_of_birth, <bdi dir="ltr" class="odt-ltr-term">married</bdi>_to, <bdi dir="ltr" class="odt-ltr-term">number</bdi>_of_children, <bdi dir="ltr" class="odt-ltr-term">id</bdi>] ويتم إرساله إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>] (السطر 1). تتم معالجته بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePerson</bdi>] التالية:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// validation modification / addition of a person</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doValidatePersonne(HttpServletRequest request, HttpServletResponse response) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> ServletException, IOException {</span></span></span>
@@ -4135,7 +4090,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 </code></pre></div>
 
-
 <ul>
   <li><span style="color: #000000">الأسطر 7-13: يتم استرداد المعلمة [<bdi dir="ltr" class="odt-ltr-term">firstName</bdi>] من طلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> والتحقق من صحتها. إذا كانت غير صحيحة، يتم تهيئة العنصر [<bdi dir="ltr" class="odt-ltr-term">firstNameError</bdi>] برسالة خطأ ووضعه في سمات الطلب.</span>
   </li>
@@ -4161,76 +4115,37 @@
   </li>
 </ul>
 
-تقوم طريقة [<bdi dir="ltr" class="odt-ltr-term">showFormulaire</bdi>] (الأسطر 88-97) بإنشاء النموذج المطلوب لصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>] باستخدام القيم المدخلة (*<bdi dir="ltr" class="odt-ltr-term">request.getParameter</bdi>(&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; ... &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;))*. تذكر أن رسائل الخطأ قد تم وضعها بالفعل في النموذج بواسطة طريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePersonne</bdi>]. يتم عرض صفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>] في السطر 99.
-
-
-### 3.4.4. <span style="color: #4f81bd">اختبار تطبيق الويب</span>
-
-
-تم عرض عدد من الاختبارات في [<u><span style="color: #0563c1">القسم 3.4.1</span></u>](#spring-mvc-37-ecrans). ندعو القارئ إلى إجرائها مرة أخرى. نعرض هنا لقطات شاشة إضافية توضح حالات تعارض الوصول إلى البيانات في بيئة متعددة المستخدمين:
-
-سيكون [<bdi dir="ltr" class="odt-ltr-term">Firefox</bdi>] هو متصفح المستخدم <bdi dir="ltr" class="odt-ltr-term">U1.</bdi> يطلب المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/spring-jpa-hibernate-personnes-crud/do/list</bdi>]:
-
-
-<img src="images/10000000000002770000014B72FF316C.png" width="442" height="232" style="width:11.689cm;height:6.131cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002770000014B72FF316C.png" />
-
-
-سيكون [<bdi dir="ltr" class="odt-ltr-term">IE7</bdi>] متصفح المستخدم <bdi dir="ltr" class="odt-ltr-term">U2.</bdi> يطلب المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> نفس عنوان <bdi dir="ltr" class="odt-ltr-term">URL:</bdi>
-
-
-<img src="images/100000000000027400000118414097A9.png" width="440" height="196" style="width:11.629cm;height:5.186cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027400000118414097A9.png" />
-
-
-يبدأ المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> في تعديل السجل الخاص بالشخص [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>]:
-
-
-<img src="images/1000000000000193000001A005020597.png" width="282" height="291" style="width:7.459cm;height:7.699cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000193000001A005020597.png" />
-
-
-يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:
-
-
-<img src="images/100000000000019E000001943A2A52D4.png" width="290" height="283" style="width:7.669cm;height:7.484cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019E000001943A2A52D4.png" />
-
-
-يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> بإجراء تغييرات وإرسالها:
-
+<p>تقوم طريقة [<bdi dir="ltr" class="odt-ltr-term">showFormulaire</bdi>] (الأسطر 88-97) بإنشاء النموذج المطلوب لصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>] باستخدام القيم المدخلة (<em><bdi dir="ltr" class="odt-ltr-term">request.getParameter</bdi>(&quot; ... &quot;))</em>. تذكر أن رسائل الخطأ قد تم وضعها بالفعل في النموذج بواسطة طريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePersonne</bdi>]. يتم عرض صفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>] في السطر 99.</p>
+<h3 id="344">3.4.4. <span style="color: #4f81bd">اختبار تطبيق الويب</span></h3>
+<p>تم عرض عدد من الاختبارات في <a href="#spring-mvc-37-ecrans"><u><span style="color: #0563c1">القسم 3.4.1</span></u></a>. ندعو القارئ إلى إجرائها مرة أخرى. نعرض هنا لقطات شاشة إضافية توضح حالات تعارض الوصول إلى البيانات في بيئة متعددة المستخدمين:</p>
+<p>سيكون [<bdi dir="ltr" class="odt-ltr-term">Firefox</bdi>] هو متصفح المستخدم <bdi dir="ltr" class="odt-ltr-term">U1.</bdi> يطلب المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/spring-jpa-hibernate-personnes-crud/do/list</bdi>]:</p>
+<p><img src="images/10000000000002770000014B72FF316C.png" width="442" height="232" style="width:11.689cm;height:6.131cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002770000014B72FF316C.png" /></p>
+<p>سيكون [<bdi dir="ltr" class="odt-ltr-term">IE7</bdi>] متصفح المستخدم <bdi dir="ltr" class="odt-ltr-term">U2.</bdi> يطلب المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> نفس عنوان <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
+<p><img src="images/100000000000027400000118414097A9.png" width="440" height="196" style="width:11.629cm;height:5.186cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027400000118414097A9.png" /></p>
+<p>يبدأ المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> في تعديل السجل الخاص بالشخص [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>]:</p>
+<p><img src="images/1000000000000193000001A005020597.png" width="282" height="291" style="width:7.459cm;height:7.699cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000193000001A005020597.png" /></p>
+<p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:</p>
+<p><img src="images/100000000000019E000001943A2A52D4.png" width="290" height="283" style="width:7.669cm;height:7.484cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019E000001943A2A52D4.png" /></p>
+<p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> بإجراء تغييرات وإرسالها:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005570000025EAC63F0C1.png" width="680" height="302" style="display:inline-block; margin:4px;width:17.997cm;height:7.978cm;" class="odt-zoomable" data-zoom-src="images/10000000000005570000025EAC63F0C1.png" /></td></tr></table>
 
-يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:
-
+<p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054D0000029FC334D402.png" width="679" height="336" style="display:inline-block; margin:4px;width:17.953cm;height:8.878cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000029FC334D402.png" /></td></tr></table>
 
-يعود المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> إلى قائمة الأشخاص باستخدام الرابط [العودة إلى القائمة] الموجود في النموذج:
-
-
-<img src="images/100000000000027600000119D43514C4.png" width="378" height="169" style="width:9.999cm;height:4.461cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027600000119D43514C4.png" />
-
-
-ويجد الشخص [<bdi dir="ltr" class="odt-ltr-term">Lemarchand</bdi>] كما عدّله <bdi dir="ltr" class="odt-ltr-term">U1</bdi> (متزوج، ولديه طفلان). وقد تغير رقم إصدار **<bdi dir="ltr" class="odt-ltr-term">p2</bdi>**. والآن يقوم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بحذف [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>]:
-
+<p>يعود المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> إلى قائمة الأشخاص باستخدام الرابط [العودة إلى القائمة] الموجود في النموذج:</p>
+<p><img src="images/100000000000027600000119D43514C4.png" width="378" height="169" style="width:9.999cm;height:4.461cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027600000119D43514C4.png" /></p>
+<p>ويجد الشخص [<bdi dir="ltr" class="odt-ltr-term">Lemarchand</bdi>] كما عدّله <bdi dir="ltr" class="odt-ltr-term">U1</bdi> (متزوج، ولديه طفلان). وقد تغير رقم إصدار <strong><bdi dir="ltr" class="odt-ltr-term">p2</bdi></strong>. والآن يقوم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بحذف [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055F0000017EFF59E50C.png" width="680" height="189" style="display:inline-block; margin:4px;width:17.997cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/100000000000055F0000017EFF59E50C.png" /></td></tr></table>
 
-لا يزال لدى <bdi dir="ltr" class="odt-ltr-term">U1</bdi> قائمته الخاصة ويريد تعديل [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>] مرة أخرى:
-
+<p>لا يزال لدى <bdi dir="ltr" class="odt-ltr-term">U1</bdi> قائمته الخاصة ويريد تعديل [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>] مرة أخرى:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005530000019D87F4AF1C.png" width="680" height="206" style="display:inline-block; margin:4px;width:17.997cm;height:5.452cm;" class="odt-zoomable" data-zoom-src="images/10000000000005530000019D87F4AF1C.png" /></td></tr></table>
 
-يستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> رابط [العودة إلى القائمة] لمعرفة ما يجري:
-
-
-<img src="images/100000000000027700000118741FDFC7.png" width="442" height="196" style="width:11.689cm;height:5.188cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027700000118741FDFC7.png" />
-
-
-يكتشف أن [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>] لم يعد بالفعل جزءًا من القائمة...
-
-
-### 3.4.5. <span style="color: #4f81bd">الإصدار 2</span>
-
-
-نقوم بتعديل الإصدار السابق قليلاً لاستخدام أرشيفات طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، <bdi dir="ltr" class="odt-ltr-term">dao</bdi>، <bdi dir="ltr" class="odt-ltr-term">jpa</bdi>] بدلاً من شفرة المصدر الخاصة بها:
-
+<p>يستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> رابط [العودة إلى القائمة] لمعرفة ما يجري:</p>
+<p><img src="images/100000000000027700000118741FDFC7.png" width="442" height="196" style="width:11.689cm;height:5.188cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027700000118741FDFC7.png" /></p>
+<p>يكتشف أن [<bdi dir="ltr" class="odt-ltr-term">p2</bdi>] لم يعد بالفعل جزءًا من القائمة...</p>
+<h3 id="345-2">3.4.5. <span style="color: #4f81bd">الإصدار 2</span></h3>
+<p>نقوم بتعديل الإصدار السابق قليلاً لاستخدام أرشيفات طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، <bdi dir="ltr" class="odt-ltr-term">dao</bdi>، <bdi dir="ltr" class="odt-ltr-term">jpa</bdi>] بدلاً من شفرة المصدر الخاصة بها:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004ED00000143D2E7D971.png" width="631" height="161" style="display:inline-block; margin:4px;width:16.683cm;height:4.272cm;" class="odt-zoomable" data-zoom-src="images/10000000000004ED00000143D2E7D971.png" /></td></tr></table>
-
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> الجديد. لاحظ أن حزم [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، <bdi dir="ltr" class="odt-ltr-term">dao</bdi>، <bdi dir="ltr" class="odt-ltr-term">entities</bdi>] قد اختفت. فقد تم تغليفها في أرشيف [<bdi dir="ltr" class="odt-ltr-term">service-dao-jpa-personne.jar</bdi>] [2] الموجود في [<bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib</bdi>].</span>
@@ -4239,15 +4154,10 @@
   </li>
 </ul>
 
-<span style="color: #000000">لا يوجد شيء آخر للقيام به. عند تشغيل التطبيق الويب الجديد وطلب قائمة الأشخاص، نتلقى الرد التالي:</span>
-
+<p><span style="color: #000000">لا يوجد شيء آخر للقيام به. عند تشغيل التطبيق الويب الجديد وطلب قائمة الأشخاص، نتلقى الرد التالي:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028B000000CBC1E2BE00.png" width="448" height="140" style="display:inline-block; margin:4px;width:11.857cm;height:3.697cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000CBC1E2BE00.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<span style="color: #000000">لا يمكن لـ <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> العثور على الكيان [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>]. لحل هذه المشكلة، يجب أن نعلن الكيانات المدارة صراحةً في ملف [<bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>]:</span>
-
-
-
-
+<p><span style="color: #000000">لا يمكن لـ <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> العثور على الكيان [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>]. لحل هذه المشكلة، يجب أن نعلن الكيانات المدارة صراحةً في ملف [<bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml </span><span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;1.0&quot; </span><span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;UTF-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">persistence </span><span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;1.0&quot;</span></span></span>
@@ -4260,22 +4170,16 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">persistence</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-
 <ul>
   <li><span style="color: #000000">السطر 7: تم إعلان كيان </span><i><bdi dir="ltr" class="odt-ltr-term">Person</bdi></i><span style="color: #000000">.</span>
   </li>
 </ul>
 
-<span style="color: #000000">بمجرد القيام بذلك، تختفي الاستثناء:</span>
-
+<p><span style="color: #000000">بمجرد القيام بذلك، تختفي الاستثناء:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000026F000000EF07E60F33.png" width="436" height="167" style="display:inline-block; margin:4px;width:11.539cm;height:4.427cm;" class="odt-zoomable" data-zoom-src="images/100000000000026F000000EF07E60F33.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-
-### 3.4.6. <span style="color: #4f81bd">تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span>
-
-
+<h3 id="346-jpa">3.4.6. <span style="color: #4f81bd">تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E3000001761CEC0C4A.png" width="626" height="187" style="display:inline-block; margin:4px;width:16.551cm;height:4.948cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E3000001761CEC0C4A.png" /></td></tr></table>
-
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> الجديد</span>
@@ -4286,11 +4190,7 @@
   </li>
 </ul>
 
-<span style="color: #000000">لا يتطلب تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> سوى بعض التعديلات في ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>]. ولا يتغير أي شيء آخر. تم شرح التغييرات التي أُجريت على ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] في </span>[<u><span style="color: #0563c1">القسم 3.1.9</span></u>](#spring-agent-toplink)<span style="color: #000000">:</span>
-
-
-
-
+<p><span style="color: #000000">لا يتطلب تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> سوى بعض التعديلات في ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>]. ولا يتغير أي شيء آخر. تم شرح التغييرات التي أُجريت على ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] في </span><a href="#spring-agent-toplink"><u><span style="color: #0563c1">القسم 3.1.9</span></u></a><span style="color: #000000">:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml </span><span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;1.0&quot; </span><span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="color:#2a00ff">&quot;UTF-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -4311,9 +4211,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">beans</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-لا يلزم تغيير سوى بضعة أسطر للتحول من <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> إلى <bdi dir="ltr" class="odt-ltr-term">Toplink:</bdi>
-
-
+<p>لا يلزم تغيير سوى بضعة أسطر للتحول من <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> إلى <bdi dir="ltr" class="odt-ltr-term">Toplink:</bdi></p>
 <ul>
   <li>السطر 11: يتم الآن التعامل مع تنفيذ <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> بواسطة <bdi dir="ltr" class="odt-ltr-term">Toplink</bdi>
   </li>
@@ -4321,14 +4219,11 @@
   </li>
 </ul>
 
-هذا كل شيء. لاحظ مدى سهولة التبديل بين أنظمة إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) أو تطبيقات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> باستخدام <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> لكننا لم ننتهِ بعد. عند تشغيل التطبيق، تحدث استثناء:
-
+<p>هذا كل شيء. لاحظ مدى سهولة التبديل بين أنظمة إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) أو تطبيقات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> باستخدام <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> لكننا لم ننتهِ بعد. عند تشغيل التطبيق، تحدث استثناء:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028B000000D2F3721337.png" width="456" height="147" style="display:inline-block; margin:4px;width:12.06cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000D2F3721337.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<span style="color: #000000">هذه هي نفس المشكلة التي واجهناها ووصفناها في </span>[<u><span style="color: #0563c1">القسم 3.1.9</span></u>](#spring-agent-toplink)<span style="color: #000000">. يتم حلها عن طريق تشغيل <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> باستخدام وكيل <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> للقيام بذلك، قم بتعديل تكوين بدء تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></span>
-
+<p><span style="color: #000000">هذه هي نفس المشكلة التي واجهناها ووصفناها في </span><a href="#spring-agent-toplink"><u><span style="color: #0563c1">القسم 3.1.9</span></u></a><span style="color: #000000">. يتم حلها عن طريق تشغيل <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> باستخدام وكيل <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> للقيام بذلك، قم بتعديل تكوين بدء تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048C000001DE60C4A03E.png" width="582" height="239" style="display:inline-block; margin:4px;width:15.399cm;height:6.324cm;" class="odt-zoomable" data-zoom-src="images/100000000000048C000001DE60C4A03E.png" /></td></tr></table>
-
 
 <ul>
   <li><span style="color: #000000">في [1]: اخترنا الخيار [<bdi dir="ltr" class="odt-ltr-term">Run</bdi> / <bdi dir="ltr" class="odt-ltr-term">Run...</bdi>] لتعديل إعدادات <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></span>
@@ -4339,20 +4234,11 @@
   </li>
 </ul>
 
-<span style="color: #000000">وبمجرد الانتهاء من ذلك، يمكننا طلب قائمة الأشخاص:</span>
-
-
-<img src="images/1000000000000275000000F5A59D552D.png" width="440" height="172" style="width:11.65cm;height:4.538cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000275000000F5A59D552D.png" />
-
-
-
-## 3.5. <span style="color: #4f81bd">أمثلة أخرى</span>
-
-
-<span style="color: #000000">كنا نرغب في عرض مثال ويب تم فيه استبدال حاوية <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> التي تمت مناقشتها في </span>[<u><span style="color: #0563c1">القسم 3.2</span></u>](#jbossejb3-personne)<span style="color: #000000">:</span>
-
+<p><span style="color: #000000">وبمجرد الانتهاء من ذلك، يمكننا طلب قائمة الأشخاص:</span></p>
+<p><img src="images/1000000000000275000000F5A59D552D.png" width="440" height="172" style="width:11.65cm;height:4.538cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000275000000F5A59D552D.png" /></p>
+<h2 id="35">3.5. <span style="color: #4f81bd">أمثلة أخرى</span></h2>
+<p><span style="color: #000000">كنا نرغب في عرض مثال ويب تم فيه استبدال حاوية <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> التي تمت مناقشتها في </span><a href="#jbossejb3-personne"><u><span style="color: #0563c1">القسم 3.2</span></u></a><span style="color: #000000">:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000034700000205761570EF.png" width="420" height="259" style="display:inline-block; margin:4px;width:11.1cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/100000000000034700000205761570EF.png" /></td></tr></table>
-
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi></span>
@@ -4361,11 +4247,7 @@
   </li>
 </ul>
 
-<span style="color: #000000">أعدنا استخدام التكوين [<bdi dir="ltr" class="odt-ltr-term">jboss-config.xml</bdi>, <bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>] الموصوف في </span>[<u><span style="color: #0563c1">القسم 3.</span></u>](#jbossejb3-personne)<span style="color: #000000">2، ثم عدّلنا طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] في وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application.java</bdi>] على النحو التالي:</span>
-
-
-
-
+<p><span style="color: #000000">أعدنا استخدام التكوين [<bdi dir="ltr" class="odt-ltr-term">jboss-config.xml</bdi>, <bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>] الموصوف في </span><a href="#jbossejb3-personne"><u><span style="color: #0563c1">القسم 3.</span></u></a><span style="color: #000000">2، ثم عدّلنا طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] في وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application.java</bdi>] على النحو التالي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">// init</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@SuppressWarnings</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;unchecked&quot;</span><span style="color:#000000">)</span></span></span>
@@ -4418,7 +4300,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 </code></pre></div>
 
-
 <ul>
   <li><span style="color: #000000">الأسطر 28–38: يتم تشغيل حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3.</bdi> وهذا يحل محل حاوية <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi></span>
   </li>
@@ -4426,11 +4307,10 @@
   </li>
 </ul>
 
-<span style="color: #000000">للوهلة الأولى، هذه هي التغييرات الوحيدة المطلوبة. عند التنفيذ، يحدث الخطأ التالي:</span>
-
+<p><span style="color: #000000">للوهلة الأولى، هذه هي التغييرات الوحيدة المطلوبة. عند التنفيذ، يحدث الخطأ التالي:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000288000001024C9BB7B9.png" width="448" height="178" style="display:inline-block; margin:4px;width:11.841cm;height:4.715cm;" class="odt-zoomable" data-zoom-src="images/1000000000000288000001024C9BB7B9.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<span style="color: #000000">لم أتمكن من تحديد مكان المشكلة بالضبط. يبدو أن الاستثناء الذي أبلغ عنه <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يشير إلى أنه تم طلب الكائن المسمى &<bdi dir="ltr" class="odt-ltr-term">quot</bdi>;<bdi dir="ltr" class="odt-ltr-term">TransactionManager</bdi>&<bdi dir="ltr" class="odt-ltr-term">quot</bdi>; من خدمة <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi>، التي لم تتعرف عليه. أترك للقراء مهمة إيجاد حل لهذه المشكلة. إذا تم العثور على حل، فسيتم تضمينه في هذا المستند.</span>
+<p><span style="color: #000000">لم أتمكن من تحديد مكان المشكلة بالضبط. يبدو أن الاستثناء الذي أبلغ عنه <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يشير إلى أنه تم طلب الكائن المسمى &quot;<bdi dir="ltr" class="odt-ltr-term">TransactionManager</bdi>&quot; من خدمة <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi>، التي لم تتعرف عليه. أترك للقراء مهمة إيجاد حل لهذه المشكلة. إذا تم العثور على حل، فسيتم تضمينه في هذا المستند.</span></p>
 
 
 
