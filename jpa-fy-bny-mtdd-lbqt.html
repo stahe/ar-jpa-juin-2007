@@ -875,11 +875,11 @@
 
 <h1 id="3-jpa">3. <span style="color: #365f91"><bdi dir="ltr" class="odt-ltr-term">JPA</bdi> في بنية متعددة الطبقات</span></h1>
 <p>لدراسة واجهة برمجة تطبيقات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi>، استخدمنا بنية الاختبار التالية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E0000000CABD3FDE30.png" width="624" height="101" style="display:inline-block; margin:4px;width:16.51cm;height:2.672cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E0000000CABD3FDE30.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E0000000CABD3FDE30.png" width="624" height="101" style="display:inline-block; margin:4px;width:16.51cm;height:2.672cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E0000000CABD3FDE30.png" /></td></tr></table>
 
 <p>كانت برامج الاختبار الخاصة بنا عبارة عن تطبيقات وحدة التحكم التي تستعلم عن طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> مباشرةً. وبذلك، استكشفنا الطرق الرئيسية لطبقة <bdi dir="ltr" class="odt-ltr-term">JPA.</bdi> كنا نعمل في بيئة تُعرف باسم &quot;<bdi dir="ltr" class="odt-ltr-term">Java SE</bdi>&quot; (الإصدار القياسي). تعمل <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> في بيئات <bdi dir="ltr" class="odt-ltr-term">Java SE</bdi> و<bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> (الإصدار المؤسسي) على حد سواء. </p>
 <p>والآن بعد أن أصبح لدينا فهم جيد لكل من تكوين جسر العلاقات/الكائنات واستخدام أساليب طبقة <bdi dir="ltr" class="odt-ltr-term">JPA</bdi>، نعود إلى بنية متعددة المستويات أكثر تقليدية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005190000010B65DEB739.png" width="653" height="133" style="display:inline-block; margin:4px;width:17.265cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005190000010B65DEB739.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005190000010B65DEB739.png" width="653" height="133" style="display:inline-block; margin:4px;width:17.265cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005190000010B65DEB739.png" /></td></tr></table>
 
 <p>سيتم الوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">JPA</bdi>] عبر بنية ثنائية الطبقات تتكون من طبقتي [الأعمال] و[<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. سيتم استخدام إطار عمل <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [7]، متبوعًا بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> [8]، لربط هذه الطبقات معًا.</p>
 <p>ذكرنا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> متاح في بيئتي <bdi dir="ltr" class="odt-ltr-term">SE</bdi> و <bdi dir="ltr" class="odt-ltr-term">EE5.</bdi> توفر بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> العديد من الخدمات للوصول إلى البيانات الدائمة، بما في ذلك مجمعات الاتصال ومديري المعاملات والمزيد. قد يكون من المفيد للمطور الاستفادة من هذه الخدمات. لم يتم اعتماد بيئة <bdi dir="ltr" class="odt-ltr-term">Java EE5</bdi> على نطاق واسع بعد (مايو 2007). وهي متاحة حاليًا على <em><bdi dir="ltr" class="odt-ltr-term">Sun Application Server</bdi> 9.x (<bdi dir="ltr" class="odt-ltr-term">Glassfish</bdi>)</em>. خادم التطبيقات هو في الأساس خادم تطبيقات ويب. إذا قمت بإنشاء تطبيق رسومي مستقل باستخدام <bdi dir="ltr" class="odt-ltr-term">Swing</bdi>، فلن تتمكن من الاستفادة من بيئة <bdi dir="ltr" class="odt-ltr-term">EE</bdi> والخدمات التي توفرها. وهذا يمثل مشكلة. بدأنا نرى بيئات <bdi dir="ltr" class="odt-ltr-term">EE</bdi> &quot;مستقلة&quot;، أي تلك التي يمكن استخدامها خارج خادم التطبيقات. وهذا هو الحال مع <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi>، الذي سنستخدمه في هذا المستند.</p>
@@ -895,20 +895,20 @@
 </ul>
 
 <p>سنختتم هذا المستند بمثال لتطبيق ويب ثلاثي الطبقات — بسيط ولكنه تمثيلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000517000000FA6B23F30D.png" width="652" height="125" style="display:inline-block; margin:4px;width:17.238cm;height:3.307cm;" class="odt-zoomable" data-zoom-src="images/1000000000000517000000FA6B23F30D.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000517000000FA6B23F30D.png" width="652" height="125" style="display:inline-block; margin:4px;width:17.238cm;height:3.307cm;" class="odt-zoomable" data-zoom-src="images/1000000000000517000000FA6B23F30D.png" /></td></tr></table>
 
-<h2 id="31-1-spring-jpa-person">3.1. <span style="color: #4f81bd">المثال 1: <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> مع كيان <bdi dir="ltr" class="odt-ltr-term">Person</bdi></span></h2>
+<h2 id="31-1-spring-jpa-person">3.1. <span style="color: #4f81bd">المثال 1: <bdi dir="ltr" class="odt-ltr-term">Spring / JPA</bdi> مع كيان <bdi dir="ltr" class="odt-ltr-term">Person</bdi></span></h2>
 <p>نأخذ كيان <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> الذي تمت مناقشته في <a href="#ex1-hb-personne"><u><span style="color: #0563c1">القسم 2.1</span></u></a> وندمجه في بنية متعددة الطبقات حيث يتم دمج الطبقات باستخدام <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ويتم تنفيذ طبقة الاستمرارية بواسطة <bdi dir="ltr" class="odt-ltr-term">Hibernate.</bdi></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000516000001151CC1F60B.png" width="651" height="138" style="display:inline-block; margin:4px;width:17.224cm;height:3.664cm;" class="odt-zoomable" data-zoom-src="images/1000000000000516000001151CC1F60B.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000516000001151CC1F60B.png" width="651" height="138" style="display:inline-block; margin:4px;width:17.224cm;height:3.664cm;" class="odt-zoomable" data-zoom-src="images/1000000000000516000001151CC1F60B.png" /></td></tr></table>
 
 <p>يُفترض أن يكون لدى القارئ فهم أساسي لـ <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> إذا لم يكن الأمر كذلك، يمكنك قراءة الوثيقة التالية، التي تشرح مفهوم <strong>حقن التبعية،</strong> الذي يمثل جوهر <bdi dir="ltr" class="odt-ltr-term">Spring:</bdi></p>
 <p>[<strong><bdi dir="ltr" class="odt-ltr-term">ref3</bdi></strong>]: <strong><bdi dir="ltr" class="odt-ltr-term">Spring IoC</bdi></strong> (انعكاس التحكم) [<a href="http://tahe.developpez.com/java/springioc"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://tahe.developpez.com/java/springioc</bdi></span></u></a>].</p>
 <p><a id="hibernate-spring-personnes-metier-dao"></a></p>
 <h3 id="311-eclipsespringhibernate">3.1.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse/Spring/Hibernate</bdi> &quot; &quot;</span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> هو كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052A00000181C0649D21.png" width="661" height="192" style="display:inline-block; margin:4px;width:17.489cm;height:5.092cm;" class="odt-zoomable" data-zoom-src="images/100000000000052A00000181C0649D21.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000052A00000181C0649D21.png" width="661" height="192" style="display:inline-block; margin:4px;width:17.489cm;height:5.092cm;" class="odt-zoomable" data-zoom-src="images/100000000000052A00000181C0649D21.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050000000131962BA7B2.png" width="640" height="153" style="display:inline-block; margin:4px;width:16.933cm;height:4.036cm;" class="odt-zoomable" data-zoom-src="images/100000000000050000000131962BA7B2.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000050000000131962BA7B2.png" width="640" height="153" style="display:inline-block; margin:4px;width:16.933cm;height:4.036cm;" class="odt-zoomable" data-zoom-src="images/100000000000050000000131962BA7B2.png" /></td></tr></table>
 
 <ul>
   <li>في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse.</bdi> يمكن العثور عليه في [6] ضمن أمثلة البرنامج التعليمي [5]. سنقوم باستيراده.
@@ -933,7 +933,7 @@
 
 <p><a id="spring-jpa-personne-entite"></a></p>
 <h3 id="312-jpa">3.1.2. <span style="color: #4f81bd">كيانات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044E000000C03BD07FFD.png" width="551" height="96" style="display:inline-block; margin:4px;width:14.579cm;height:2.54cm;" class="odt-zoomable" data-zoom-src="images/100000000000044E000000C03BD07FFD.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000044E000000C03BD07FFD.png" width="551" height="96" style="display:inline-block; margin:4px;width:14.579cm;height:2.54cm;" class="odt-zoomable" data-zoom-src="images/100000000000044E000000C03BD07FFD.png" /></td></tr></table>
 
 <p>لا يوجد سوى كيان واحد يتم إدارته هنا، وهو كيان <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> الذي تمت مناقشته في <a href="#ex1-hb-personne"><u><span style="color: #0563c1">القسم 2.1</span></u></a>، وتظهر تهيئته أدناه:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -992,7 +992,7 @@
 
 <p><a id="spring-jpa-personne-dao"></a></p>
 <h3 id="313-dao">3.1.3. <span style="color: #4f81bd">طبقة [ <bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B2000000882BACF0D8.png" width="125" height="95" style="display:inline-block; margin:4px;width:3.3cm;height:2.521cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B2000000882BACF0D8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000023E00000097E21D9FD3.png" width="287" height="76" style="display:inline-block; margin:4px;width:7.594cm;height:1.998cm;" class="odt-zoomable" data-zoom-src="images/100000000000023E00000097E21D9FD3.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000B2000000882BACF0D8.png" width="125" height="95" style="display:inline-block; margin:4px;width:3.3cm;height:2.521cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B2000000882BACF0D8.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000023E00000097E21D9FD3.png" width="287" height="76" style="display:inline-block; margin:4px;width:7.594cm;height:1.998cm;" class="odt-zoomable" data-zoom-src="images/100000000000023E00000097E21D9FD3.png" /></td></tr></table>
 
 <p>توفر طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] واجهة <bdi dir="ltr" class="odt-ltr-term">IDao</bdi> التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -1166,7 +1166,7 @@
 
 <p><a id="spring-jpa-personne-service"></a></p>
 <h3 id="314-business">3.1.4. <span style="color: #4f81bd">طبقة [خدمة <bdi dir="ltr" class="odt-ltr-term">business/</bdi> ]</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000043A000000C521F1A783.png" width="541" height="98" style="display:inline-block; margin:4px;width:14.314cm;height:2.605cm;" class="odt-zoomable" data-zoom-src="images/100000000000043A000000C521F1A783.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000043A000000C521F1A783.png" width="541" height="98" style="display:inline-block; margin:4px;width:14.314cm;height:2.605cm;" class="odt-zoomable" data-zoom-src="images/100000000000043A000000C521F1A783.png" /></td></tr></table>
 
 <p>توفر طبقة [الخدمة] واجهة [<bdi dir="ltr" class="odt-ltr-term">IService</bdi>] التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -1308,7 +1308,7 @@
 
 <p><a id="spring-jpa-personne-conf"></a></p>
 <h3 id="315">3.1.5. <span style="color: #4f81bd">تكوين الطبقة</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000AE0000009D3F15F0B3.png" width="122" height="110" style="display:inline-block; margin:4px;width:3.221cm;height:2.905cm;" class="odt-zoomable" data-zoom-src="images/10000000000000AE0000009D3F15F0B3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A40000008AA20FB27F.png" width="338" height="69" style="display:inline-block; margin:4px;width:8.943cm;height:1.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A40000008AA20FB27F.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000AE0000009D3F15F0B3.png" width="122" height="110" style="display:inline-block; margin:4px;width:3.221cm;height:2.905cm;" class="odt-zoomable" data-zoom-src="images/10000000000000AE0000009D3F15F0B3.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000002A40000008AA20FB27F.png" width="338" height="69" style="display:inline-block; margin:4px;width:8.943cm;height:1.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A40000008AA20FB27F.png" /></td></tr></table>
 
 <p>يتم تكوين طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] و[dao] و[<bdi dir="ltr" class="odt-ltr-term">JPA</bdi>] من خلال الملفين المذكورين أعلاه: [<strong><bdi dir="ltr" class="odt-ltr-term">META-INF/persistence.xml</bdi></strong>] و[<strong><bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi></strong>]. يجب أن يكون كلا الملفين موجودين في <em>مسار</em> فئات التطبيق، ولهذا السبب تم وضعهما في مجلد [src] الخاص بمشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse.</bdi> واسم الملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] هو اسم اختياري.</p>
 <p><u><strong><bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi></strong></u></p>
@@ -1402,10 +1402,10 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D3000000C2DD02A982.png" width="618" height="97" style="display:inline-block; margin:4px;width:16.339cm;height:2.566cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D3000000C2DD02A982.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004D3000000C2DD02A982.png" width="618" height="97" style="display:inline-block; margin:4px;width:16.339cm;height:2.566cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D3000000C2DD02A982.png" /></td></tr></table>
 
 <p>في الأعلى، كان من الممكن تسمية [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]، المشار إليه بـ &quot;مجمع الاتصالات&quot;، بـ &quot;مصدر البيانات&quot;. يوفر مصدر البيانات خدمة &quot;مجمع الاتصالات&quot;. مع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi>، سنستخدم مصدر بيانات بخلاف [<bdi dir="ltr" class="odt-ltr-term">c3p0</bdi>]. وهو [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] من مشروع <em><bdi dir="ltr" class="odt-ltr-term">Apache Commons DBCP</bdi></em> [<bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org/commons/dbcp/</bdi>]. تم وضع أرشيفات [<bdi dir="ltr" class="odt-ltr-term">DBCP</bdi>] في مكتبة المستخدم [<bdi dir="ltr" class="odt-ltr-term">jpa-spring</bdi>]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B900000078D27BF689.png" width="130" height="84" style="display:inline-block; margin:4px;width:3.431cm;height:2.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B900000078D27BF689.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000B900000078D27BF689.png" width="130" height="84" style="display:inline-block; margin:4px;width:3.431cm;height:2.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B900000078D27BF689.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <ul>
   <li>الأسطر 38–41: لإنشاء اتصالات مع قاعدة البيانات المستهدفة، يحتاج مصدر البيانات إلى معرفة برنامج تشغيل <bdi dir="ltr" class="odt-ltr-term">JDBC</bdi> المستخدم (السطر 38)، وعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لقاعدة البيانات (السطر 39)، واسم مستخدم الاتصال، وكلمة المرور الخاصة به (الأسطر 40–41).
@@ -1455,7 +1455,7 @@
 <p><a id="spring-jpa-personne-initdb"></a></p>
 <h3 id="316-initdb">3.1.6. <span style="color: #4f81bd">برنامج العميل [ <bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>]</span></h3>
 <p>سنقوم الآن بكتابة أول عميل للبنية الموصوفة أعلاه:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005250000010338ACC81A.png" width="659" height="130" style="display:inline-block; margin:4px;width:17.424cm;height:3.427cm;" class="odt-zoomable" data-zoom-src="images/10000000000005250000010338ACC81A.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005250000010338ACC81A.png" width="659" height="130" style="display:inline-block; margin:4px;width:17.424cm;height:3.427cm;" class="odt-zoomable" data-zoom-src="images/10000000000005250000010338ACC81A.png" /></td></tr></table>
 
 <p>فيما يلي كود [<bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -2144,7 +2144,7 @@
 
 <p>هذه مجرد افتراضات، وسيكون من المفيد هنا الحصول على رأي خبير.</p>
 <h3 id="318-dbms">3.1.8. <span style="color: #4f81bd">تغيير نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000453000000EBB7A3CD5E.png" width="554" height="118" style="display:inline-block; margin:4px;width:14.646cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/1000000000000453000000EBB7A3CD5E.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000453000000EBB7A3CD5E.png" width="554" height="118" style="display:inline-block; margin:4px;width:14.646cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/1000000000000453000000EBB7A3CD5E.png" /></td></tr></table>
 
 <p>لتغيير نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)، ما عليك سوى استبدال ملف [<bdi dir="ltr" class="odt-ltr-term">src/spring-config.xml</bdi>] [2] بملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] الخاص بنظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) ذي الصلة الموجود في المجلد [<bdi dir="ltr" class="odt-ltr-term">conf</bdi>] [1].</p>
 <p>على سبيل المثال، يبدو ملف [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Oracle</bdi> كما يلي:</p>
@@ -2194,10 +2194,10 @@
 <p><a id="spring-agent-toplink"></a></p>
 <h3 id="319-jpa">3.1.9. <span style="color: #4f81bd">تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
 <p>لنعد إلى بنية الاختبارات السابقة:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052300000117198D0627.png" width="658" height="140" style="display:inline-block; margin:4px;width:17.397cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/100000000000052300000117198D0627.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000052300000117198D0627.png" width="658" height="140" style="display:inline-block; margin:4px;width:17.397cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/100000000000052300000117198D0627.png" /></td></tr></table>
 
 <p>نحن نستبدل تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA/Hibernate</bdi> بتطبيق <bdi dir="ltr" class="odt-ltr-term">JPA/TopLink.</bdi> وبما أن <bdi dir="ltr" class="odt-ltr-term">TopLink</bdi> لا يستخدم نفس المكتبات التي يستخدمها <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi>، فإننا نستخدم مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> جديد:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A900000154BC1E6393.png" width="597" height="170" style="display:inline-block; margin:4px;width:15.783cm;height:4.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A900000154BC1E6393.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004A900000154BC1E6393.png" width="597" height="170" style="display:inline-block; margin:4px;width:15.783cm;height:4.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A900000154BC1E6393.png" /></td></tr></table>
 
 <ul>
   <li>في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse.</bdi> وهو مطابق للمشروع السابق. التغييرات الوحيدة هي ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] [2] ومكتبة [<bdi dir="ltr" class="odt-ltr-term">jpa-toplink</bdi>]، التي تحل محل مكتبة [<bdi dir="ltr" class="odt-ltr-term">jpa-hibernate</bdi>].
@@ -2298,7 +2298,7 @@
 </code></pre></div>
 
 <p>يشير السطر 1 من الاستثناء إلى فئة باسم [<bdi dir="ltr" class="odt-ltr-term">InstrumentationLoadTimeWeaver</bdi>]، والتي يمكن العثور عليها في السطر 13 من ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> توضح وثائق <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> أن هذه الفئة ضرورية في حالات معينة لتحميل فئات التطبيق، وأنه لكي تعمل، يجب تشغيل <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> مع وكيل. يتم توفير هذا الوكيل بواسطة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> ويُسمى [<bdi dir="ltr" class="odt-ltr-term">spring-agent</bdi>]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003DC000001505A01A3F6.png" width="494" height="168" style="display:inline-block; margin:4px;width:13.07cm;height:4.445cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DC000001505A01A3F6.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000003DC000001505A01A3F6.png" width="494" height="168" style="display:inline-block; margin:4px;width:13.07cm;height:4.445cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DC000001505A01A3F6.png" /></td></tr></table>
 
 <ul>
   <li>يوجد ملف [<bdi dir="ltr" class="odt-ltr-term">spring-agent.jar</bdi>] في المجلد &lt;<bdi dir="ltr" class="odt-ltr-term">examples</bdi>&gt;/lib [1]. وهو مضمن في توزيع <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> 2.x (انظر <a href="#spring2"><u><span style="color: #0563c1">القسم 5.11</span></u></a>).
@@ -2309,7 +2309,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055100000166F91F71CC.png" width="680" height="179" style="display:inline-block; margin:4px;width:17.997cm;height:4.734cm;" class="odt-zoomable" data-zoom-src="images/100000000000055100000166F91F71CC.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000055100000166F91F71CC.png" width="680" height="179" style="display:inline-block; margin:4px;width:17.997cm;height:4.734cm;" class="odt-zoomable" data-zoom-src="images/100000000000055100000166F91F71CC.png" /></td></tr></table>
 
 <ul>
   <li>في [5]، حدد علامة التبويب [<bdi dir="ltr" class="odt-ltr-term">Main</bdi>]
@@ -2337,7 +2337,7 @@
 </ul>
 
 <p>بمجرد الانتهاء من ذلك، يتم تشغيل [<bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>] ويُنتج نفس النتائج كما هو الحال مع <bdi dir="ltr" class="odt-ltr-term">Hibernate.</bdi> بالنسبة لـ [<bdi dir="ltr" class="odt-ltr-term">TestNG</bdi>]، تابع بنفس الطريقة:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004230000010472DFD330.png" width="530" height="130" style="display:inline-block; margin:4px;width:14.011cm;height:3.44cm;" class="odt-zoomable" data-zoom-src="images/10000000000004230000010472DFD330.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004230000010472DFD330.png" width="530" height="130" style="display:inline-block; margin:4px;width:14.011cm;height:3.44cm;" class="odt-zoomable" data-zoom-src="images/10000000000004230000010472DFD330.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، قم بإنشاء تكوين تشغيل [<bdi dir="ltr" class="odt-ltr-term">Run/Run...</bdi>]
@@ -2354,7 +2354,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003CF0000015DA3D55CA0.png" width="488" height="175" style="display:inline-block; margin:4px;width:12.899cm;height:4.618cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CF0000015DA3D55CA0.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000003CF0000015DA3D55CA0.png" width="488" height="175" style="display:inline-block; margin:4px;width:12.899cm;height:4.618cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CF0000015DA3D55CA0.png" /></td></tr></table>
 
 <ul>
   <li>في [7]، انتقل إلى علامة التبويب [<bdi dir="ltr" class="odt-ltr-term">Arguments</bdi>].
@@ -2373,15 +2373,15 @@
 <p><a id="jbossejb3-personne"></a></p>
 <h2 id="32-2-jboss-ejb3jpa-person">3.2. <span style="color: #4f81bd">المثال 2: تكوين <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3/JPA</bdi> مع كيان <bdi dir="ltr" class="odt-ltr-term">Person</bdi></span></h2>
 <p>سنستخدم نفس المثال السابق، ولكن سنقوم بتشغيله في حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi>، وتحديدًا حاوية <bdi dir="ltr" class="odt-ltr-term">JBoss:</bdi></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000528000001056434E969.png" width="660" height="131" style="display:inline-block; margin:4px;width:17.463cm;height:3.454cm;" class="odt-zoomable" data-zoom-src="images/1000000000000528000001056434E969.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000528000001056434E969.png" width="660" height="131" style="display:inline-block; margin:4px;width:17.463cm;height:3.454cm;" class="odt-zoomable" data-zoom-src="images/1000000000000528000001056434E969.png" /></td></tr></table>
 
 <p>عادةً ما يتم دمج حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> في خادم تطبيقات. يوفر <bdi dir="ltr" class="odt-ltr-term">JBoss</bdi> حاوية <bdi dir="ltr" class="odt-ltr-term">EJB3</bdi> &quot;مستقلة&quot; يمكن استخدامها خارج خادم التطبيقات. سنكتشف أنها توفر خدمات مشابهة لتلك التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> سنحاول معرفة أي من هذه الحاويات يثبت أنه الأكثر عملية.</p>
 <p>يتم وصف تثبيت حاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> في <a href="#jbossejb3"><u><span style="color: #0563c1">القسم 5.12</span></u></a>.</p>
-<h3 id="321-eclipse-jboss-ejb3-hibernate">3.2.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> / <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> / <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi></span></h3>
+<h3 id="321-eclipse-jboss-ejb3-hibernate">3.2.1. <span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse / JBoss EJB3 / Hibernate</bdi></span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> هو كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000523000001BC0832675C.png" width="658" height="222" style="display:inline-block; margin:4px;width:17.397cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/1000000000000523000001BC0832675C.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000523000001BC0832675C.png" width="658" height="222" style="display:inline-block; margin:4px;width:17.397cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/1000000000000523000001BC0832675C.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D400000125A6A74B3C.png" width="618" height="146" style="display:inline-block; margin:4px;width:16.351cm;height:3.875cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D400000125A6A74B3C.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004D400000125A6A74B3C.png" width="618" height="146" style="display:inline-block; margin:4px;width:16.351cm;height:3.875cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D400000125A6A74B3C.png" /></td></tr></table>
 
 <ul>
   <li>في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse.</bdi> يمكن العثور عليه في [6] ضمن أمثلة البرنامج التعليمي [5]. سنقوم باستيراده.
@@ -2405,11 +2405,11 @@
 </ul>
 
 <h3 id="322-jpa">3.2.2. <span style="color: #4f81bd">كيانات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000501000000B18F583168.png" width="641" height="89" style="display:inline-block; margin:4px;width:16.947cm;height:2.342cm;" class="odt-zoomable" data-zoom-src="images/1000000000000501000000B18F583168.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000501000000B18F583168.png" width="641" height="89" style="display:inline-block; margin:4px;width:16.947cm;height:2.342cm;" class="odt-zoomable" data-zoom-src="images/1000000000000501000000B18F583168.png" /></td></tr></table>
 
 <p>يوجد كيان واحد فقط يتم إدارته هنا: كيان <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> الذي تمت مناقشته سابقًا في <a href="#spring-jpa-personne-entite"><u><span style="color: #0563c1">القسم 3.1.2</span></u></a>.</p>
 <h3 id="323-dao">3.2.3. <span style="color: #4f81bd">طبقة [dao]</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047E000000DB815D524E.png" width="575" height="109" style="display:inline-block; margin:4px;width:15.214cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/100000000000047E000000DB815D524E.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000047E000000DB815D524E.png" width="575" height="109" style="display:inline-block; margin:4px;width:15.214cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/100000000000047E000000DB815D524E.png" /></td></tr></table>
 
 <p>تنفذ طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] الموصوفة سابقًا في <a href="#spring-jpa-personne-dao"><u><span style="color: #0563c1">القسم 3.1.3</span></u></a>.</p>
 <p>تنفيذ [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] لهذه الواجهة هو كما يلي:</p>
@@ -2502,7 +2502,7 @@
 
 <p>ثم يتم تطبيق السمة على جميع أساليب الفئة.</p>
 <h3 id="324">3.2.4. <span style="color: #4f81bd">طبقة [الأعمال/الخدمات]</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000447000000CE46A0F219.png" width="548" height="103" style="display:inline-block; margin:4px;width:14.487cm;height:2.725cm;" class="odt-zoomable" data-zoom-src="images/1000000000000447000000CE46A0F219.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000447000000CE46A0F219.png" width="548" height="103" style="display:inline-block; margin:4px;width:14.487cm;height:2.725cm;" class="odt-zoomable" data-zoom-src="images/1000000000000447000000CE46A0F219.png" /></td></tr></table>
 
 <p>تنفذ طبقة [الخدمة] واجهة [<bdi dir="ltr" class="odt-ltr-term">IService</bdi>] التي تمت مناقشتها سابقًا في <a href="#spring-jpa-personne-service"><u><span style="color: #0563c1">القسم 3.1.4</span></u></a>. يتطابق تنفيذ [الخدمة] لواجهة [<bdi dir="ltr" class="odt-ltr-term">IService</bdi>] مع التنفيذ الذي تمت مناقشته سابقًا في <a href="#spring-jpa-personne-service"><u><span style="color: #0563c1">القسم 3.1.4</span></u></a>، مع ثلاثة استثناءات:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -2535,7 +2535,7 @@
 </ul>
 
 <h3 id="325">3.2.5. <span style="color: #4f81bd">تكوين الطبقات</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000045900000155FFB39CEA.png" width="557" height="170" style="display:inline-block; margin:4px;width:14.725cm;height:4.51cm;" class="odt-zoomable" data-zoom-src="images/100000000000045900000155FFB39CEA.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000045900000155FFB39CEA.png" width="557" height="170" style="display:inline-block; margin:4px;width:14.725cm;height:4.51cm;" class="odt-zoomable" data-zoom-src="images/100000000000045900000155FFB39CEA.png" /></td></tr></table>
 
 <p>يتم تكوين طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>] و[dao] و[<bdi dir="ltr" class="odt-ltr-term">JPA</bdi>] بواسطة الملفات التالية: </p>
 <ul>
@@ -2671,7 +2671,7 @@
 <p>لقد انتهينا من ملف تكوين <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3.</bdi> إنه معقد، ولا تزال العديد من الجوانب غير واضحة. تم أخذه من [<strong><bdi dir="ltr" class="odt-ltr-term">ref1</bdi></strong>]. ومع ذلك، سنتمكن من تكييفه مع نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) آخر (الأسطر 12–15 من <strong><bdi dir="ltr" class="odt-ltr-term">jboss-config.xml</bdi></strong>، السطر 24 من <strong><bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi></strong>). لم يكن الترحيل إلى <bdi dir="ltr" class="odt-ltr-term">Toplink</bdi> ممكنًا بسبب نقص الأمثلة.</p>
 <h3 id="326-initdb">3.2.6. <span style="color: #4f81bd">برنامج العميل [<bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>]</span></h3>
 <p>سنبدأ الآن في كتابة أول عميل للبنية الموصوفة أعلاه:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052800000112AC9D7662.png" width="660" height="137" style="display:inline-block; margin:4px;width:17.463cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000052800000112AC9D7662.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000052800000112AC9D7662.png" width="660" height="137" style="display:inline-block; margin:4px;width:17.463cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000052800000112AC9D7662.png" /></td></tr></table>
 
 <p>فيما يلي كود [<bdi dir="ltr" class="odt-ltr-term">InitDB</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -2916,7 +2916,7 @@
 <p>تم اجتياز الاختبارات:</p>
 <p><img src="images/1000000000000138000000F0A70441E5.png" width="218" height="168" style="width:5.78cm;height:4.447cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000138000000F0A70441E5.png" /></p>
 <h3 id="328-dbms">3.2.8. <span style="color: #4f81bd">تغيير نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046D000001097D14380A.png" width="567" height="133" style="display:inline-block; margin:4px;width:14.99cm;height:3.507cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D000001097D14380A.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000046D000001097D14380A.png" width="567" height="133" style="display:inline-block; margin:4px;width:14.99cm;height:3.507cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D000001097D14380A.png" /></td></tr></table>
 
 <p>لتغيير نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)، ما عليك سوى استبدال محتويات المجلد [<bdi dir="ltr" class="odt-ltr-term">META-INF</bdi>] [2] بمحتويات المجلد <bdi dir="ltr" class="odt-ltr-term">DBMS</bdi> الموجود في المجلد [<bdi dir="ltr" class="odt-ltr-term">conf</bdi>] [1]. لنأخذ <strong><bdi dir="ltr" class="odt-ltr-term">SQL Server</bdi></strong> كمثال:</p>
 <p>ملف [<bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>] هو كما يلي:</p>
@@ -2993,47 +2993,47 @@
 <h2 id="33">3.3. <span style="color: #4f81bd">أمثلة أخرى</span></h2>
 <p>دعونا نلخص ما تم إنجازه فيما يتعلق بكيان &quot;<em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>&quot;. لقد أنشأنا ثلاث بنى لتشغيل نفس الاختبارات:</p>
 <p>1 - تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">Spring/Hibernate</bdi></strong></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005200000010B403DD296.png" width="656" height="133" style="display:inline-block; margin:4px;width:17.357cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005200000010B403DD296.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005200000010B403DD296.png" width="656" height="133" style="display:inline-block; margin:4px;width:17.357cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000005200000010B403DD296.png" /></td></tr></table>
 
 <p>2 - تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">Spring/TopLink</bdi></strong></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050800000103D165FD95.png" width="644" height="129" style="display:inline-block; margin:4px;width:17.039cm;height:3.425cm;" class="odt-zoomable" data-zoom-src="images/100000000000050800000103D165FD95.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000050800000103D165FD95.png" width="644" height="129" style="display:inline-block; margin:4px;width:17.039cm;height:3.425cm;" class="odt-zoomable" data-zoom-src="images/100000000000050800000103D165FD95.png" /></td></tr></table>
 
-<p>3 - تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> / <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi></strong></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052C0000010B2202E69C.png" width="662" height="133" style="display:inline-block; margin:4px;width:17.515cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/100000000000052C0000010B2202E69C.png" /></td></tr></table>
+<p>3 - تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">JBoss EJB3 / Hibernate</bdi></strong></p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000052C0000010B2202E69C.png" width="662" height="133" style="display:inline-block; margin:4px;width:17.515cm;height:3.531cm;" class="odt-zoomable" data-zoom-src="images/100000000000052C0000010B2202E69C.png" /></td></tr></table>
 
 <p><span style="color: #000000">تستخدم الأمثلة الواردة في البرنامج التعليمي هذه البنى الثلاث إلى جانب الكيانات الأخرى التي تمت تغطيتها في الجزء الأول من البرنامج التعليمي:</span></p>
 <p><u><strong><span style="color: #000000">الفئة - المقالة</span></strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053D0000011AB518CA59.png" width="671" height="141" style="display:inline-block; margin:4px;width:17.741cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/100000000000053D0000011AB518CA59.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000053D0000011AB518CA59.png" width="671" height="141" style="display:inline-block; margin:4px;width:17.741cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/100000000000053D0000011AB518CA59.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]: إصدار <bdi dir="ltr" class="odt-ltr-term">Spring/Hibernate</bdi></span>
   </li>
-  <li><span style="color: #000000">في [2]: إصدار <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">Toplink</bdi></span>
+  <li><span style="color: #000000">في [2]: إصدار <bdi dir="ltr" class="odt-ltr-term">Spring / Toplink</bdi></span>
   </li>
-  <li><span style="color: #000000">في [3]: إصدار <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> / <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi></span>
+  <li><span style="color: #000000">في [3]: إصدار <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3 / Hibernate</bdi></span>
   </li>
 </ul>
 
 <p><u><strong><span style="color: #000000">الشخص - العنوان - النشاط</span></strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054100000118F5C62377.png" width="673" height="140" style="display:inline-block; margin:4px;width:17.794cm;height:3.704cm;" class="odt-zoomable" data-zoom-src="images/100000000000054100000118F5C62377.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000054100000118F5C62377.png" width="673" height="140" style="display:inline-block; margin:4px;width:17.794cm;height:3.704cm;" class="odt-zoomable" data-zoom-src="images/100000000000054100000118F5C62377.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]: إصدار <bdi dir="ltr" class="odt-ltr-term">Spring/Hibernate</bdi></span>
   </li>
   <li><span style="color: #000000">في [2]: إصدار <bdi dir="ltr" class="odt-ltr-term">Spring/Toplink</bdi></span>
   </li>
-  <li><span style="color: #000000">في [3]: إصدار <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> / <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi></span>
+  <li><span style="color: #000000">في [3]: إصدار <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3 / Hibernate</bdi></span>
   </li>
 </ul>
 
 <p><span style="color: #000000">لا تقدم هذه الأمثلة أي مفاهيم معمارية جديدة. إنها تنطبق ببساطة على سيناريو حيث توجد كيانات متعددة لإدارتها، مع علاقات </span><strong><span style="color: #000000">واحد إلى العديد </span></strong><span style="color: #000000">أو </span><strong><span style="color: #000000">العديد إلى العديد </span></strong><span style="color: #000000">بينها — وهو أمر لم تتضمنه الأمثلة التي استخدمت كيان </span><em><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">Person</bdi></span></em><span style="color: #000000">.</span></p>
-<h2 id="34-3-spring-jpa">3.4. <span style="color: #000000">المثال 3: <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> / <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> في تطبيق ويب</span></h2>
+<h2 id="34-3-spring-jpa">3.4. <span style="color: #000000">المثال 3: <bdi dir="ltr" class="odt-ltr-term">Spring / JPA</bdi> في تطبيق ويب</span></h2>
 <h3 id="341">3.4.1. <span style="color: #4f81bd">نظرة عامة</span></h3>
 <p>هنا نعيد النظر في تطبيق تم عرضه في الوثيقة التالية:</p>
 <p>[<strong><bdi dir="ltr" class="odt-ltr-term">ref4</bdi></strong>]: أساسيات تطوير الويب باستخدام نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> في <bdi dir="ltr" class="odt-ltr-term">Java</bdi> [<a href="http://tahe.developpez.com/java/baseswebmvc/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://tahe.developpez.com/java/baseswebmvc/</bdi></span></u></a>].</p>
 <p>يقدم هذا المستند أساسيات تطوير الويب باستخدام نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> في <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> لفهم المثال التالي، يجب أن يكون القارئ على دراية بهذه الأساسيات. سيستخدم تطبيق الويب خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يرد وصف تثبيته واستخدامه داخل <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> في <a href="#tomcat55"><u><span style="color: #0563c1">القسم 5.3</span></u></a>.</p>
 <p>تم تطوير التطبيق في الأصل باستخدام طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] تستند إلى أداة <bdi dir="ltr" class="odt-ltr-term">iBatis/SQLMap</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://ibatis.apache.org/</bdi>]، التي كانت تتولى عملية التعيين من العلاقات إلى الكائنات. سنقوم ببساطة باستبدال <bdi dir="ltr" class="odt-ltr-term">iBatis</bdi> بـ <bdi dir="ltr" class="odt-ltr-term">JPA.</bdi> ستكون بنية التطبيق كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052B0000010FCBD52A95.png" width="662" height="135" style="display:inline-block; margin:4px;width:17.503cm;height:3.584cm;" class="odt-zoomable" data-zoom-src="images/100000000000052B0000010FCBD52A95.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000052B0000010FCBD52A95.png" width="662" height="135" style="display:inline-block; margin:4px;width:17.503cm;height:3.584cm;" class="odt-zoomable" data-zoom-src="images/100000000000052B0000010FCBD52A95.png" /></td></tr></table>
 
 <p>سيسمح لنا التطبيق الويب الذي سنقوم بكتابته بإدارة مجموعة من الأشخاص باستخدام أربع عمليات:</p>
 <ul>
@@ -3048,26 +3048,26 @@
 </ul>
 
 <p>هذه العمليات الأساسية الأربع شائعة في جدول قاعدة البيانات. تُظهر الشاشات التالية<a id="spring-mvc-37-ecrans"></a> الصفحات التي يعرضها التطبيق للمستخدم.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054A0000021490EF2FA7.png" width="677" height="266" style="display:inline-block; margin:4px;width:17.912cm;height:7.038cm;" class="odt-zoomable" data-zoom-src="images/100000000000054A0000021490EF2FA7.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000054A0000021490EF2FA7.png" width="677" height="266" style="display:inline-block; margin:4px;width:17.912cm;height:7.038cm;" class="odt-zoomable" data-zoom-src="images/100000000000054A0000021490EF2FA7.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000551000001FDB5F4B377.png" width="680" height="254" style="display:inline-block; margin:4px;width:17.997cm;height:6.731cm;" class="odt-zoomable" data-zoom-src="images/1000000000000551000001FDB5F4B377.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000551000001FDB5F4B377.png" width="680" height="254" style="display:inline-block; margin:4px;width:17.997cm;height:6.731cm;" class="odt-zoomable" data-zoom-src="images/1000000000000551000001FDB5F4B377.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054A0000019528C67D00.png" width="677" height="203" style="display:inline-block; margin:4px;width:17.912cm;height:5.359cm;" class="odt-zoomable" data-zoom-src="images/100000000000054A0000019528C67D00.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000054A0000019528C67D00.png" width="677" height="203" style="display:inline-block; margin:4px;width:17.912cm;height:5.359cm;" class="odt-zoomable" data-zoom-src="images/100000000000054A0000019528C67D00.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005430000022193DCD228.png" width="674" height="273" style="display:inline-block; margin:4px;width:17.821cm;height:7.211cm;" class="odt-zoomable" data-zoom-src="images/10000000000005430000022193DCD228.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005430000022193DCD228.png" width="674" height="273" style="display:inline-block; margin:4px;width:17.821cm;height:7.211cm;" class="odt-zoomable" data-zoom-src="images/10000000000005430000022193DCD228.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000276000000EE6785F5DE.png" width="403" height="152" style="display:inline-block; margin:4px;width:10.65cm;height:4.023cm;" class="odt-zoomable" data-zoom-src="images/1000000000000276000000EE6785F5DE.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000276000000EE6785F5DE.png" width="403" height="152" style="display:inline-block; margin:4px;width:10.65cm;height:4.023cm;" class="odt-zoomable" data-zoom-src="images/1000000000000276000000EE6785F5DE.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <h3 id="342-eclipse">3.4.2. <span style="color: #4f81bd"><span style="color: #4f81bd">مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi></span></span></h3>
 <p>مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> الخاص بالتطبيق هو كما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E60000018A83976579.png" width="627" height="197" style="display:inline-block; margin:4px;width:16.589cm;height:5.212cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E60000018A83976579.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E60000018A83976579.png" width="627" height="197" style="display:inline-block; margin:4px;width:16.589cm;height:5.212cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E60000018A83976579.png" /></td></tr></table>
 
 <ul>
   <li>في [1]: مشروع الويب. هذا مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> من نوع [مشروع الويب الديناميكي] [2]. يمكن العثور عليه في [4] في المجلد [3] الخاص بأمثلة البرنامج التعليمي. سنقوم باستيراده.
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EE00000298BAB6E8FC.png" width="631" height="332" style="display:inline-block; margin:4px;width:16.695cm;height:8.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EE00000298BAB6E8FC.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004EE00000298BAB6E8FC.png" width="631" height="332" style="display:inline-block; margin:4px;width:16.695cm;height:8.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EE00000298BAB6E8FC.png" /></td></tr></table>
 
 <ul>
   <li>في [5]: المصادر وتكوين طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، dao، jpa]. نحتفظ بالمكونات [dao، <bdi dir="ltr" class="odt-ltr-term">entities</bdi>، <bdi dir="ltr" class="odt-ltr-term">service</bdi>] الموجودة من مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> [<bdi dir="ltr" class="odt-ltr-term">hibernate-spring-people-business-dao</bdi>] الذي تمت مناقشته في <a href="#hibernate-spring-personnes-metier-dao"><u><span style="color: #0563c1">القسم 3.1.1</span></u></a>. نحن نطور فقط طبقة [web]، الممثلة هنا بحزمة [web]. علاوة على ذلك، نحتفظ بملفات التكوين [<bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>، <bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>] من ذلك المشروع، باستثناء أننا سنستخدم نظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">Postgres</bdi>، مما يؤدي إلى التغييرات التالية في [<bdi dir="ltr" class="odt-ltr-term">spring-config.xml</bdi>]:
@@ -3109,7 +3109,7 @@
 
 <h3 id="343-web">3.4.3. <span style="color: #4f81bd">طبقة [web]</span></h3>
 <p>يتميز تطبيقنا بالبنية متعددة الطبقات التالية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000045900000160CE209F53.png" width="557" height="176" style="display:inline-block; margin:4px;width:14.725cm;height:4.657cm;" class="odt-zoomable" data-zoom-src="images/100000000000045900000160CE209F53.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000045900000160CE209F53.png" width="557" height="176" style="display:inline-block; margin:4px;width:14.725cm;height:4.657cm;" class="odt-zoomable" data-zoom-src="images/100000000000045900000160CE209F53.png" /></td></tr></table>
 
 <p>ستوفر طبقة [الويب] شاشات للمستخدم لتمكينه من إدارة مجموعة الأشخاص:</p>
 <ul>
@@ -3137,7 +3137,7 @@
 
 <h4 id="3431">3.4.3.1. <span style="color: #4f81bd">تكوين تطبيق الويب</span></h4>
 <p>دعونا نلقي نظرة على بنية مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse:</bdi></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B2000000AC029A8D4B.png" width="118" height="114" style="display:inline-block; margin:4px;width:3.11cm;height:3.006cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B2000000AC029A8D4B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B80000010040707ECF.png" width="129" height="179" style="display:inline-block; margin:4px;width:3.41cm;height:4.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B80000010040707ECF.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000B2000000AC029A8D4B.png" width="118" height="114" style="display:inline-block; margin:4px;width:3.11cm;height:3.006cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B2000000AC029A8D4B.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000B80000010040707ECF.png" width="129" height="179" style="display:inline-block; margin:4px;width:3.41cm;height:4.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B80000010040707ECF.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <ul>
   <li>في الحزمة [web]، نجد وحدة التحكم في التطبيق الويب: فئة [<bdi dir="ltr" class="odt-ltr-term">Application</bdi>].
@@ -3328,7 +3328,7 @@
 <p>الصفحة [<a id="personnes-01-edit-jsp"></a><a id="spring-mvc-37-edit-jsp"></a> <bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]</p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
 <p>تُستخدم لعرض النموذج الخاص بإضافة شخص جديد أو تعديل شخص موجود:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000554000002111FE61745.png" width="680" height="264" style="display:inline-block; margin:4px;width:17.997cm;height:6.98cm;" class="odt-zoomable" data-zoom-src="images/1000000000000554000002111FE61745.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000554000002111FE61745.png" width="680" height="264" style="display:inline-block; margin:4px;width:17.997cm;height:6.98cm;" class="odt-zoomable" data-zoom-src="images/1000000000000554000002111FE61745.png" /></td></tr></table>
 
 <p>فيما يلي كود عرض [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -3417,43 +3417,43 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>السمة</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">GET</bdi></b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">POST</bdi></b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b>السمة</b></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">GET</bdi></b></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">POST</bdi></b></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>id
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">معرف الشخص الذي يتم</div><div style="margin:0 0 0.5em 0">التحديث</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">نفس</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">معرف الشخص الذي يتم</div><div style="margin:0 0 0.5em 0">التحديث</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">نفس</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>الإصدار
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">إصداره</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">نفس</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">إصداره</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">نفس</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>الاسم الأول
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الاسم الأول</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الاسم الأول الذي تم إدخاله</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">الاسم الأول</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">الاسم الأول الذي تم إدخاله</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>اللقب
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">اللقب</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تم إدخال الاسم الأخير</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اللقب</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تم إدخال الاسم الأخير</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>تاريخ الميلاد
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تاريخ ميلاده</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تم إدخال تاريخ الميلاد</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تاريخ ميلاده</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تم إدخال تاريخ الميلاد</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>متزوج
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الحالة الاجتماعية</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الحالة الاجتماعية</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">الحالة الاجتماعية</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">الحالة الاجتماعية</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>عدد الأطفال
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عدد الأطفال</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عدد الأطفال المدخلين</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عدد الأطفال</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عدد الأطفال المدخلين</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>خطأ تحرير
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">رسالة خطأ تشير إلى أن الإضافة</div><div style="margin:0 0 0.5em 0">أو التعديل في وقت إرسال <bdi dir="ltr" class="odt-ltr-term">POST</bdi></div><div style="margin:0 0 0.5em 0">بواسطة زر [إرسال]. فارغ في حالة عدم وجود خطأ.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">رسالة خطأ تشير إلى أن الإضافة</div><div style="margin:0 0 0.5em 0">أو التعديل في وقت إرسال <bdi dir="ltr" class="odt-ltr-term">POST</bdi></div><div style="margin:0 0 0.5em 0">بواسطة زر [إرسال]. فارغ في حالة عدم وجود خطأ.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>errorFirstName
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يشير إلى اسم أول غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يشير إلى اسم أول غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>lastNameError
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يشير إلى اسم عائلة غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يشير إلى اسم عائلة غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>خطأ في تاريخ الميلاد
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يشير إلى تاريخ ميلاد غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يشير إلى تاريخ ميلاد غير صحيح – فارغ في الحالات الأخرى</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>خطأ_عدد_الأطفال
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يشير إلى عدد غير صحيح للأطفال – فارغ في الحالات الأخرى</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">فارغ</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يشير إلى عدد غير صحيح للأطفال – فارغ في الحالات الأخرى</div></td></tr></table>
 
 <ul>
   <li>الأسطر 11-15: إذا فشل إرسال النموذج (<bdi dir="ltr" class="odt-ltr-term">POST</bdi>)، فسيتم إرجاع [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>!=&#x27;&#x27;] وسيتم عرض رسالة خطأ.
@@ -3495,7 +3495,7 @@
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
 <p>تُستخدم هذه الصفحة لعرض رسالة تشير إلى حدوث استثناء لم يتم التعامل معه من قبل التطبيق وتم تمريره إلى خادم الويب.</p>
 <p>على سبيل المثال، دعونا نحذف شخصًا غير موجود في المجموعة:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054D0000014CEFC085AA.png" width="679" height="166" style="display:inline-block; margin:4px;width:17.953cm;height:4.392cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000014CEFC085AA.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000054D0000014CEFC085AA.png" width="679" height="166" style="display:inline-block; margin:4px;width:17.953cm;height:4.392cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000014CEFC085AA.png" /></td></tr></table>
 
 <p>فيما يلي كود عرض [<bdi dir="ltr" class="odt-ltr-term">exception.jsp</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -3694,19 +3694,19 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">Url</bdi></b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>طريقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi></b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>طريقة وحدة التحكم</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b><bdi dir="ltr" class="odt-ltr-term">Url</bdi></b></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b>طريقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi></b></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b>طريقة وحدة التحكم</b></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>/do/list
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doListPeople</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doListPeople</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/do/edit
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>/do/validate
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">POST</bdi></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doValidatePerson</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">POST</bdi></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doValidatePerson</bdi></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="err">/do/delete</span>
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi></div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">GET</bdi></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi></div></td></tr></table>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
 <p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doGet</bdi><span style="color: #000000">]</span></p>
@@ -3767,22 +3767,22 @@
   </li>
   <li>السطر 17: نسترد قيمة المعلمة [<bdi dir="ltr" class="odt-ltr-term">action</bdi>] من الطلب.
   </li>
-  <li>الأسطر 23–27: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، الذي يطلب قائمة الأشخاص.
+  <li>الأسطر 23–27: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/list</bdi>]، الذي يطلب قائمة الأشخاص.
   </li>
-  <li>الأسطر 28–32: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>]، الذي يطلب حذف شخص.
+  <li>الأسطر 28–32: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/delete</bdi>]، الذي يطلب حذف شخص.
   </li>
-  <li>الأسطر 33-37: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>]، الذي يطلب النموذج لتحديث شخص.
+  <li>الأسطر 33-37: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/edit</bdi>]، الذي يطلب النموذج لتحديث شخص.
   </li>
-  <li>الأسطر 38–42: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">POST</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>]، الذي يطلب التحقق من صحة الشخص الذي تم تحديثه.
+  <li>الأسطر 38–42: معالجة طلب [<bdi dir="ltr" class="odt-ltr-term">POST /do/validate</bdi>]، الذي يطلب التحقق من صحة الشخص الذي تم تحديثه.
   </li>
-  <li>السطر 44: إذا لم يكن الإجراء المطلوب أحد الإجراءات الخمسة السابقة، فإننا نتعامل معه كما لو كان [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>].
+  <li>السطر 44: إذا لم يكن الإجراء المطلوب أحد الإجراءات الخمسة السابقة، فإننا نتعامل معه كما لو كان [<bdi dir="ltr" class="odt-ltr-term">GET /do/list</bdi>].
   </li>
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
 <p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doListPersonnes</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، الذي يطلب قائمة الأشخاص:</span></p>
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/list</bdi>]، الذي يطلب قائمة الأشخاص:</span></p>
 <p><img src="images/1000000000000289000000FBFF1CEC65.png" width="387" height="150" style="width:10.239cm;height:3.96cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000289000000FBFF1CEC65.png" /></p>
 <p>وإليك كودها:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -3805,7 +3805,7 @@
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
 <p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doDeletePerson</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يطلب حذف الشخص ذي المعرف id=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000"> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>هو عنوان روابط [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/delete</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يطلب حذف الشخص ذي المعرف id=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000"> [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>هو عنوان روابط [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
 <p><img src="images/100000000000026D000001057820C57B.png" width="435" height="183" style="width:11.501cm;height:4.835cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026D000001057820C57B.png" /></p>
 <p>والذي يكون كوده كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -3852,14 +3852,14 @@
 
 <p><img src="images/10000000000001DB000000B57C26FF30.png" width="333" height="127" style="width:8.8cm;height:3.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DB000000B57C26FF30.png" /></p>
 <ul>
-  <li><span style="color: #000000">السطر 9: إذا نجح الحذف (لم تحدث استثناءات)، يتم إعادة توجيه العميل إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> النسبي [<bdi dir="ltr" class="odt-ltr-term">list</bdi>]. وبما أن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تمت معالجته للتو كان [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>]، فإن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لإعادة التوجيه سيكون [/<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]. وبالتالي، سيقوم المتصفح بتنفيذ طلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]، والذي سيعرض قائمة الأشخاص.</span>
+  <li><span style="color: #000000">السطر 9: إذا نجح الحذف (لم تحدث استثناءات)، يتم إعادة توجيه العميل إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> النسبي [<bdi dir="ltr" class="odt-ltr-term">list</bdi>]. وبما أن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تمت معالجته للتو كان [/<bdi dir="ltr" class="odt-ltr-term">do/delete</bdi>]، فإن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لإعادة التوجيه سيكون [/<bdi dir="ltr" class="odt-ltr-term">do/list</bdi>]. وبالتالي، سيقوم المتصفح بتنفيذ طلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/list</bdi>]، والذي سيعرض قائمة الأشخاص.</span>
   </li>
 </ul>
 
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
 <p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPerson</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p><span style="color: #000000">تتعامل هذه الطريقة مع الطلب [<bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يسترد النموذج الخاص بتحديث الشخص ذي المعرف id=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>يتم استخدام عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000">[/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>للرابطين [<bdi dir="ltr" class="odt-ltr-term">Edit</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">Add</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
+<p><span style="color: #000000">تتعامل هذه الطريقة مع الطلب [<bdi dir="ltr" class="odt-ltr-term">GET /do/edit</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>]، الذي يسترد النموذج الخاص بتحديث الشخص ذي المعرف id=<bdi dir="ltr" class="odt-ltr-term">XX.</bdi> </span>يتم استخدام عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <span style="color: #000000">[/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] </span>للرابطين [<bdi dir="ltr" class="odt-ltr-term">Edit</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">Add</bdi>] في عرض [<bdi dir="ltr" class="odt-ltr-term">list.jsp</bdi>]:</p>
 <p><img src="images/10000000000002750000010BD6DBEA40.png" width="440" height="187" style="width:11.65cm;height:4.944cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000010BD6DBEA40.png" /></p>
 <p>والذي يكون كوده كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -3885,7 +3885,7 @@
 </code></pre></div>
 
 <p>في السطر 11، نرى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>] لرابط [تحرير]، وفي السطر 17، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">do/edit</bdi>?id=-1] لرابط [إضافة]. يجب أن تعرض طريقة [<bdi dir="ltr" class="odt-ltr-term">doEditPersonne</bdi>] نموذج التحرير للشخص الذي يحمل المعرف id=<bdi dir="ltr" class="odt-ltr-term">XX</bdi>، أو إذا كانت عملية إضافة، فيجب أن تعرض نموذجًا فارغًا.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F1000001DDAC30A2B2.png" width="633" height="239" style="display:inline-block; margin:4px;width:16.736cm;height:6.311cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F1000001DDAC30A2B2.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004F1000001DDAC30A2B2.png" width="633" height="239" style="display:inline-block; margin:4px;width:16.736cm;height:6.311cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F1000001DDAC30A2B2.png" /></td></tr></table>
 
 <ul>
   <li>في [1] أعلاه، نموذج الإضافة، وفي [2]، نموذج التعديل.
@@ -3944,7 +3944,7 @@
 </ul>
 
 <ul>
-  <li><span style="color: #000000">يتم وضع كائن [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] الناتج في قالب الصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]. يتضمن هذا القالب العناصر التالية: [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>, id, <bdi dir="ltr" class="odt-ltr-term">version</bdi>, <bdi dir="ltr" class="odt-ltr-term">firstName</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorFirstName</bdi>, <bdi dir="ltr" class="odt-ltr-term">lastName</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorLastName</bdi>, <bdi dir="ltr" class="odt-ltr-term">birthDate</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorBirthDate</bdi>, <bdi dir="ltr" class="odt-ltr-term">married</bdi>, <bdi dir="ltr" class="odt-ltr-term">numberOfChildren</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorNumberOfChildren</bdi>]. يتم تهيئة هذه العناصر في الأسطر 19–31، باستثناء تلك التي تكون قيمتها سلسلة فارغة [<bdi dir="ltr" class="odt-ltr-term">erreurPrenom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurNom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurDateNaissance</bdi>،  <bdi dir="ltr" class="odt-ltr-term">erreurNbEnfants</bdi>]. ونعلم أنه في حالة غيابها عن القالب، ستعرض مكتبة <bdi dir="ltr" class="odt-ltr-term">JSTL</bdi> سلسلة فارغة كقيمة لها. وعلى الرغم من أن عنصر [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>] يحتوي أيضًا على سلسلة فارغة كقيمة له، إلا أنه يتم تهيئته لأن فحصًا يتم إجراؤه على قيمته في صفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>].</span>
+  <li><span style="color: #000000">يتم وضع كائن [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] الناتج في قالب الصفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>]. يتضمن هذا القالب العناصر التالية: [<bdi dir="ltr" class="odt-ltr-term">errorEdit, id, version, firstName, errorFirstName, lastName, errorLastName, birthDate, errorBirthDate, married, numberOfChildren, errorNumberOfChildren</bdi>]. يتم تهيئة هذه العناصر في الأسطر 19–31، باستثناء تلك التي تكون قيمتها سلسلة فارغة [<bdi dir="ltr" class="odt-ltr-term">erreurPrenom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurNom</bdi>، <bdi dir="ltr" class="odt-ltr-term">erreurDateNaissance</bdi>،  <bdi dir="ltr" class="odt-ltr-term">erreurNbEnfants</bdi>]. ونعلم أنه في حالة غيابها عن القالب، ستعرض مكتبة <bdi dir="ltr" class="odt-ltr-term">JSTL</bdi> سلسلة فارغة كقيمة لها. وعلى الرغم من أن عنصر [<bdi dir="ltr" class="odt-ltr-term">errorEdit</bdi>] يحتوي أيضًا على سلسلة فارغة كقيمة له، إلا أنه يتم تهيئته لأن فحصًا يتم إجراؤه على قيمته في صفحة [<bdi dir="ltr" class="odt-ltr-term">edit.jsp</bdi>].</span>
   </li>
 </ul>
 
@@ -3956,7 +3956,7 @@
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
 <p>طريقة [<bdi dir="ltr" class="odt-ltr-term">doValidatePersonne</bdi><span style="color: #000000">]</span></p>
 <hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
-<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">POST</bdi> /<bdi dir="ltr" class="odt-ltr-term">do/validate</bdi>]، الذي يتحقق من صحة نموذج التحديث. يتم تشغيل هذا الطلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> بواسطة الزر [<bdi dir="ltr" class="odt-ltr-term">Validate</bdi>]</span>:</p>
+<p><span style="color: #000000">تتعامل هذه الطريقة مع طلب [<bdi dir="ltr" class="odt-ltr-term">POST /do/validate</bdi>]، الذي يتحقق من صحة نموذج التحديث. يتم تشغيل هذا الطلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi> بواسطة الزر [<bdi dir="ltr" class="odt-ltr-term">Validate</bdi>]</span>:</p>
 <p><img src="images/10000000000001CC0000017B11D6D4A5.png" width="322" height="265" style="width:8.52cm;height:7.02cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001CC0000017B11D6D4A5.png" /></p>
 <p><span style="color: #000000">دعونا نستعرض عناصر الإدخال في نموذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> في العرض أعلاه:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -4127,25 +4127,25 @@
 <p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:</p>
 <p><img src="images/100000000000019E000001943A2A52D4.png" width="290" height="283" style="width:7.669cm;height:7.484cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019E000001943A2A52D4.png" /></p>
 <p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> بإجراء تغييرات وإرسالها:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005570000025EAC63F0C1.png" width="680" height="302" style="display:inline-block; margin:4px;width:17.997cm;height:7.978cm;" class="odt-zoomable" data-zoom-src="images/10000000000005570000025EAC63F0C1.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005570000025EAC63F0C1.png" width="680" height="302" style="display:inline-block; margin:4px;width:17.997cm;height:7.978cm;" class="odt-zoomable" data-zoom-src="images/10000000000005570000025EAC63F0C1.png" /></td></tr></table>
 
 <p>يقوم المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بنفس الشيء:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054D0000029FC334D402.png" width="679" height="336" style="display:inline-block; margin:4px;width:17.953cm;height:8.878cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000029FC334D402.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000054D0000029FC334D402.png" width="679" height="336" style="display:inline-block; margin:4px;width:17.953cm;height:8.878cm;" class="odt-zoomable" data-zoom-src="images/100000000000054D0000029FC334D402.png" /></td></tr></table>
 
 <p>يعود المستخدم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> إلى قائمة الأشخاص باستخدام الرابط [العودة إلى القائمة] الموجود في النموذج:</p>
 <p><img src="images/100000000000027600000119D43514C4.png" width="378" height="169" style="width:9.999cm;height:4.461cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027600000119D43514C4.png" /></p>
 <p>ويجد الشخص [<bdi dir="ltr" class="odt-ltr-term">Lemarchand</bdi>] كما عدّله <bdi dir="ltr" class="odt-ltr-term">U1</bdi> (متزوج، ولديه طفلان). وقد تغير رقم إصدار <strong>p2</strong>. والآن يقوم <bdi dir="ltr" class="odt-ltr-term">U2</bdi> بحذف [p2]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055F0000017EFF59E50C.png" width="680" height="189" style="display:inline-block; margin:4px;width:17.997cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/100000000000055F0000017EFF59E50C.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000055F0000017EFF59E50C.png" width="680" height="189" style="display:inline-block; margin:4px;width:17.997cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/100000000000055F0000017EFF59E50C.png" /></td></tr></table>
 
 <p>لا يزال لدى <bdi dir="ltr" class="odt-ltr-term">U1</bdi> قائمته الخاصة ويريد تعديل [p2] مرة أخرى:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005530000019D87F4AF1C.png" width="680" height="206" style="display:inline-block; margin:4px;width:17.997cm;height:5.452cm;" class="odt-zoomable" data-zoom-src="images/10000000000005530000019D87F4AF1C.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005530000019D87F4AF1C.png" width="680" height="206" style="display:inline-block; margin:4px;width:17.997cm;height:5.452cm;" class="odt-zoomable" data-zoom-src="images/10000000000005530000019D87F4AF1C.png" /></td></tr></table>
 
 <p>يستخدم <bdi dir="ltr" class="odt-ltr-term">U1</bdi> رابط [العودة إلى القائمة] لمعرفة ما يجري:</p>
 <p><img src="images/100000000000027700000118741FDFC7.png" width="442" height="196" style="width:11.689cm;height:5.188cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027700000118741FDFC7.png" /></p>
 <p>يكتشف أن [p2] لم يعد بالفعل جزءًا من القائمة...</p>
 <h3 id="345-2">3.4.5. <span style="color: #4f81bd">الإصدار 2</span></h3>
 <p>نقوم بتعديل الإصدار السابق قليلاً لاستخدام أرشيفات طبقات [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، dao، jpa] بدلاً من شفرة المصدر الخاصة بها:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004ED00000143D2E7D971.png" width="631" height="161" style="display:inline-block; margin:4px;width:16.683cm;height:4.272cm;" class="odt-zoomable" data-zoom-src="images/10000000000004ED00000143D2E7D971.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004ED00000143D2E7D971.png" width="631" height="161" style="display:inline-block; margin:4px;width:16.683cm;height:4.272cm;" class="odt-zoomable" data-zoom-src="images/10000000000004ED00000143D2E7D971.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> الجديد. لاحظ أن حزم [<bdi dir="ltr" class="odt-ltr-term">service</bdi>، dao، <bdi dir="ltr" class="odt-ltr-term">entities</bdi>] قد اختفت. فقد تم تغليفها في أرشيف [<bdi dir="ltr" class="odt-ltr-term">service-dao-jpa-personne.jar</bdi>] [2] الموجود في [<bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib</bdi>].</span>
@@ -4155,7 +4155,7 @@
 </ul>
 
 <p><span style="color: #000000">لا يوجد شيء آخر للقيام به. عند تشغيل التطبيق الويب الجديد وطلب قائمة الأشخاص، نتلقى الرد التالي:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028B000000CBC1E2BE00.png" width="448" height="140" style="display:inline-block; margin:4px;width:11.857cm;height:3.697cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000CBC1E2BE00.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000028B000000CBC1E2BE00.png" width="448" height="140" style="display:inline-block; margin:4px;width:11.857cm;height:3.697cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000CBC1E2BE00.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">لا يمكن لـ <bdi dir="ltr" class="odt-ltr-term">Hibernate</bdi> العثور على الكيان [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>]. لحل هذه المشكلة، يجب أن نعلن الكيانات المدارة صراحةً في ملف [<bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
@@ -4176,10 +4176,10 @@
 </ul>
 
 <p><span style="color: #000000">بمجرد القيام بذلك، تختفي الاستثناء:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000026F000000EF07E60F33.png" width="436" height="167" style="display:inline-block; margin:4px;width:11.539cm;height:4.427cm;" class="odt-zoomable" data-zoom-src="images/100000000000026F000000EF07E60F33.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000026F000000EF07E60F33.png" width="436" height="167" style="display:inline-block; margin:4px;width:11.539cm;height:4.427cm;" class="odt-zoomable" data-zoom-src="images/100000000000026F000000EF07E60F33.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <h3 id="346-jpa">3.4.6. <span style="color: #4f81bd">تغيير تطبيق <bdi dir="ltr" class="odt-ltr-term">JPA</bdi></span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E3000001761CEC0C4A.png" width="626" height="187" style="display:inline-block; margin:4px;width:16.551cm;height:4.948cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E3000001761CEC0C4A.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E3000001761CEC0C4A.png" width="626" height="187" style="display:inline-block; margin:4px;width:16.551cm;height:4.948cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E3000001761CEC0C4A.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi> الجديد</span>
@@ -4220,13 +4220,13 @@
 </ul>
 
 <p>هذا كل شيء. لاحظ مدى سهولة التبديل بين أنظمة إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) أو تطبيقات <bdi dir="ltr" class="odt-ltr-term">JPA</bdi> باستخدام <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> لكننا لم ننتهِ بعد. عند تشغيل التطبيق، تحدث استثناء:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028B000000D2F3721337.png" width="456" height="147" style="display:inline-block; margin:4px;width:12.06cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000D2F3721337.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000028B000000D2F3721337.png" width="456" height="147" style="display:inline-block; margin:4px;width:12.06cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B000000D2F3721337.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">هذه هي نفس المشكلة التي واجهناها ووصفناها في </span><a href="#spring-agent-toplink"><u><span style="color: #0563c1">القسم 3.1.9</span></u></a><span style="color: #000000">. يتم حلها عن طريق تشغيل <bdi dir="ltr" class="odt-ltr-term">JVM</bdi> باستخدام وكيل <bdi dir="ltr" class="odt-ltr-term">Spring.</bdi> للقيام بذلك، قم بتعديل تكوين بدء تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048C000001DE60C4A03E.png" width="582" height="239" style="display:inline-block; margin:4px;width:15.399cm;height:6.324cm;" class="odt-zoomable" data-zoom-src="images/100000000000048C000001DE60C4A03E.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000048C000001DE60C4A03E.png" width="582" height="239" style="display:inline-block; margin:4px;width:15.399cm;height:6.324cm;" class="odt-zoomable" data-zoom-src="images/100000000000048C000001DE60C4A03E.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">في [1]: اخترنا الخيار [<bdi dir="ltr" class="odt-ltr-term">Run</bdi> / <bdi dir="ltr" class="odt-ltr-term">Run...</bdi>] لتعديل إعدادات <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></span>
+  <li><span style="color: #000000">في [1]: اخترنا الخيار [<bdi dir="ltr" class="odt-ltr-term">Run / Run...</bdi>] لتعديل إعدادات <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi></span>
   </li>
   <li><span style="color: #000000">في [2]: اخترنا علامة التبويب [الحجج]</span>
   </li>
@@ -4238,7 +4238,7 @@
 <p><img src="images/1000000000000275000000F5A59D552D.png" width="440" height="172" style="width:11.65cm;height:4.538cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000275000000F5A59D552D.png" /></p>
 <h2 id="35">3.5. <span style="color: #4f81bd">أمثلة أخرى</span></h2>
 <p><span style="color: #000000">كنا نرغب في عرض مثال ويب تم فيه استبدال حاوية <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> بحاوية <bdi dir="ltr" class="odt-ltr-term">JBoss EJB3</bdi> التي تمت مناقشتها في </span><a href="#jbossejb3-personne"><u><span style="color: #0563c1">القسم 3.2</span></u></a><span style="color: #000000">:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000034700000205761570EF.png" width="420" height="259" style="display:inline-block; margin:4px;width:11.1cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/100000000000034700000205761570EF.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000034700000205761570EF.png" width="420" height="259" style="display:inline-block; margin:4px;width:11.1cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/100000000000034700000205761570EF.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]: مشروع <bdi dir="ltr" class="odt-ltr-term">Eclipse</bdi></span>
@@ -4247,7 +4247,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">أعدنا استخدام التكوين [<bdi dir="ltr" class="odt-ltr-term">jboss-config.xml</bdi>, <bdi dir="ltr" class="odt-ltr-term">persistence.xml</bdi>] الموصوف في </span><a href="#jbossejb3-personne"><u><span style="color: #0563c1">القسم 3.</span></u></a><span style="color: #000000">2، ثم عدّلنا طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] في وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application.java</bdi>] على النحو التالي:</span></p>
+<p><span style="color: #000000">أعدنا استخدام التكوين [<bdi dir="ltr" class="odt-ltr-term">jboss-config.xml, persistence.xml</bdi>] الموصوف في </span><a href="#jbossejb3-personne"><u><span style="color: #0563c1">القسم 3.</span></u></a><span style="color: #000000">2، ثم عدّلنا طريقة [<bdi dir="ltr" class="odt-ltr-term">init</bdi>] في وحدة التحكم [<bdi dir="ltr" class="odt-ltr-term">Application.java</bdi>] على النحو التالي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">// init</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@SuppressWarnings</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;unchecked&quot;</span><span style="color:#000000">)</span></span></span>
@@ -4308,7 +4308,7 @@
 </ul>
 
 <p><span style="color: #000000">للوهلة الأولى، هذه هي التغييرات الوحيدة المطلوبة. عند التنفيذ، يحدث الخطأ التالي:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000288000001024C9BB7B9.png" width="448" height="178" style="display:inline-block; margin:4px;width:11.841cm;height:4.715cm;" class="odt-zoomable" data-zoom-src="images/1000000000000288000001024C9BB7B9.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000288000001024C9BB7B9.png" width="448" height="178" style="display:inline-block; margin:4px;width:11.841cm;height:4.715cm;" class="odt-zoomable" data-zoom-src="images/1000000000000288000001024C9BB7B9.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">لم أتمكن من تحديد مكان المشكلة بالضبط. يبدو أن الاستثناء الذي أبلغ عنه <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يشير إلى أنه تم طلب الكائن المسمى &quot;<bdi dir="ltr" class="odt-ltr-term">TransactionManager</bdi>&quot; من خدمة <bdi dir="ltr" class="odt-ltr-term">JNDI</bdi>، التي لم تتعرف عليه. أترك للقراء مهمة إيجاد حل لهذه المشكلة. إذا تم العثور على حل، فسيتم تضمينه في هذا المستند.</span></p>
 
